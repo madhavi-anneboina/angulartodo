@@ -15,11 +15,12 @@ export class AppComponent {
     //   password:"mady"
 
     // }) 
-    grp.control.patchValue({
-      username:"madhavi",
+    grp.control.setValue("mad")
+    // grp.control.patchValue({
+    //   username:"madhavi",
       
 
-    })
+    // })
 
 
   }
