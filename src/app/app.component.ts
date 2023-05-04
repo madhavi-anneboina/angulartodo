@@ -8,20 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angulartodo';
 
-  submit(grp:any){
-    console.log(grp.value)
-    // form.setValue({
-    //   username:"madhavi",
-    //   password:"mady"
-
-    // }) 
-    grp.control.setValue("mad")
-    // grp.control.patchValue({
-    //   username:"madhavi",
-      
-
-    // })
 
 
   }
-}
+
