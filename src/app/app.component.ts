@@ -11,6 +11,8 @@ export class AppComponent {
   submit(form:any){
     console.log(form.value)
     form.setValue({
+      username:"madhavi",
+      password:"mady"
 
     })
 
