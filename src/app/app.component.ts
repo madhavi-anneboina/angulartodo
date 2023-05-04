@@ -15,7 +15,7 @@ export class AppComponent {
     password : new FormControl()
   })
   show(){
-    console.log(this.login)
+    console.log(this.login.value.uname)
   }
 
   }
