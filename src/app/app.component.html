@@ -1,4 +1,5 @@
-<form>
+<form [formGroup]="login">
   username:  <input type="text" class="form-control w-50 m-2" formControlName="uname"/>
+  Password:  <input type="password" class="form-control w-50 m-2" formControlName="password"/>
   <button class="btn btn-primary" (click) ="show()">click</button>
 </form>

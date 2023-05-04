@@ -9,9 +9,13 @@ import { FormControl,FormGroup } from '@angular/forms';
 })
 export class AppComponent {
   title = 'angulartodo';
-  uname = new FormControl()
+
+  login = new FormGroup({
+    uname : new FormControl(),
+    password : new FormControl()
+  })
   show(){
-    console.log(this.uname)
+    console.log(this.login)
   }
 
   }
