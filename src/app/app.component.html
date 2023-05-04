@@ -1,1 +1,11 @@
 <h1>  Hello this is my angular new project</h1>
+{{title}}
+<button class="btn btn-primary">click</button>
+
+<form #reg="ngForm" ngForm>
+    <label >User Name:</label>
+    <input type="text"  ngModel name="username" minlength="5" #un="ngModel" class="w-50 m-2"/> <br/>
+    <label>Password:</label>
+    <input type="password" name="password" minlength="8" #p="ngModel" ngModel class="w-50 m-2"/>
+    <button class="btn btn-primary m-2" (click)="submit(reg)">submit</button>
+</form>

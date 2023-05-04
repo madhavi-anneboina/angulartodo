@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angulartodo';
+
+  submit(form:any){
+    console.log(form.value)
+    form.setValue({
+
+    })
+
+  }
 }
