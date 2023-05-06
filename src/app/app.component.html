@@ -1,7 +1,7 @@
 <form [formGroup]="login">
   username:  <input type="text" class="form-control w-50 m-2" formControlName="uname"/>
   <div *ngif="login.get('uname').touched&&login.get('uname').hasError('minLength')"> Minlengthrequired</div>
-  <div *ngif="login.get('uname').touched&&login.get('uname').hasError('required')"> Username required</div>
+  <div *ngif="login.controls['uname']&&login.controls['uname'].errors['minlength']"> Username required</div>
   Email:  <input type="email" class="form-control w-50 m-2" formControlName="email"/>
   <!-- <div *ngif="login.get('uname').touched&&login.get('uname').hasError('minLength')"> Minlengthrequired</div>
   <div *ngif="login.get('uname').touched&&login.get('uname').hasError('required')"> Password required</div> -->
