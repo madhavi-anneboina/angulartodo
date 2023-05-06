@@ -1,6 +1,6 @@
 <form [formGroup]="login">
   username:  <input type="text" class="form-control w-50 m-2" formControlName="uname"/>
-  <div *ngif=""></div>
+  <div *ngif="login.get('uname').touched&&login.get('uname').hasError('required')"> Username required</div>
   Email:  <input type="email" class="form-control w-50 m-2" formControlName="email"/>
   <button class="btn btn-primary" (click) ="show()">click</button>
 </form>
