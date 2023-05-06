@@ -4,6 +4,6 @@ input.ng-touched.ng-invalid{
 input.ng-touched.ng-valid{
     border : 2px solid green
 }
-div{
+p{
     color:red
 }

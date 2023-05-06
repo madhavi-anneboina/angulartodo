@@ -11,8 +11,8 @@ export class AppComponent {
   title = 'angulartodo';
 
   login = new FormGroup({
-    uname : new FormControl("John",[Validators.required,Validators.minLength(8)]),
-    email : new FormControl("john@gmail.com",[Validators.required,Validators.email])
+    uname : new FormControl("",[Validators.required,Validators.minLength(8)]),
+    email : new FormControl("",[Validators.required,Validators.email])
   })
   show(){
     console.log(this.login)
