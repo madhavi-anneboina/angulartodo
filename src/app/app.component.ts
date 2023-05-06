@@ -15,7 +15,7 @@ export class AppComponent {
     email : new FormControl("john@gmail.com",[Validators.required,Validators.email])
   })
   show(){
-    console.log(this.login.value)
+    console.log(this.login)
   }
 
   }
