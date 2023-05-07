@@ -1,12 +1,12 @@
 
-<form action="">
+<form action="" [formGroup]="testForm">
   <div formArrayName="mobileNums">
-    <div let *ngFor="let m of testForm.controls['mobileNums']['controls']">
-      <input type="text" formControlName="" />
+    <div let *ngFor="let m of testForm.controls['mobileNums']['controls'];let i=index">
+       Mobilenumber {{i}}  <input type="text" formControlName="{{i}}" class="form-control m-2 w-50" />
 
     </div>
 
   </div>
 </form>
 
-<button (click)="test()">Click</button>
+<button (click)="Add()">Add</button>

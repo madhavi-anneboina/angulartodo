@@ -13,11 +13,16 @@ export class AppComponent {
   testForm = new FormGroup({
     mobileNums : new FormArray(
       [
-      new FormControl(),
-      new FormControl()
+      new FormControl(null,Validators.required),
+     
     ]
     )
   })
+  Add(){
+   let mobilenums = this.testForm.get('mobileNums') as FormArray
+   mobilenums.push( new FormControl(null,Validators.required))
+  
+  }
 
   test(){
     console.log(this.testForm)
