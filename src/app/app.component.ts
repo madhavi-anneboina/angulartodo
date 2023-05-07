@@ -15,9 +15,21 @@ export class AppComponent {
    
   }
  regForm = new FormGroup({
-  password : new FormControl()
+  password : new FormControl(null,[Validators.required,this.uppercaseTest])
 
  })
+ uppercaseTest(c:any){
+  let pattern = /[A-Z]/
+  if(pattern.test(c.value)){
+    return null
+  
+  }
+  return {'noupper':true}
+ }
+
+ show(){
+  console.log(this.regForm)
+ }
 
   
 
