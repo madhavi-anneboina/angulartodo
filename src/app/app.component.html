@@ -12,8 +12,14 @@
 <button (click)="Add()">Add</button> -->
 
 <form [formGroup]="regForm">
-  name : <input type="text" formControlName="name" />
-  email: <input type="email" formControlName="email" />
-  Mobilenumber:<input type="text" formControlName="mobilenumber" />
+  name : <input type="text" formControlName="name"  class="form-control w-50 m-2"/>
+  email: <input type="email" formControlName="email" class="form-control w-50 m-2"/>
+  <!-- Mobilenumber:<input type="number" formControlName="mobilenumber" class="form-control w-50 m-2" /> -->
+<div formArrayName="mobilenumber">
+  <ng-container *ngFor="let m of this.regForm.get('mobilenumber')['controls']">
+    
 
+  </ng-container>
+
+</div>
 </form>
