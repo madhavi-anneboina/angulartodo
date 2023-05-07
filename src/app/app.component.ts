@@ -14,18 +14,7 @@ export class AppComponent {
   constructor(private fb:FormBuilder){
    
   }
-  regForm =this.fb.group(
-    {
-      name : [null,Validators.required],
-      email : [null,Validators.required],
-      mobilenumber:this.fb.array(
-        [
-          [],
-          []
-        ]
-      )
-    }
-  )
+ 
 
   
 
