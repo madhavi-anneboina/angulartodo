@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl,FormGroup, Validators,FormArray} from '@angular/forms';
+import { FormControl,FormGroup, Validators,FormArray,FormBuilder} from '@angular/forms';
 
 
 @Component({
@@ -10,27 +10,18 @@ import { FormControl,FormGroup, Validators,FormArray} from '@angular/forms';
 export class AppComponent {
   title = 'angulartodo';
 
-  testForm = new FormGroup({
-    mobileNums : new FormArray(
-      [
-      new FormControl(null,Validators.required),
-     
-    ]
-    )
-  })
-  Add(){
-   let mobilenums = this.testForm.get('mobileNums') as FormArray
-   mobilenums.push( new FormControl(null,Validators.required))
-  
+ 
+  constructor(private fb:FormBuilder){
+   
   }
-  delete(i:any){
-    let mobilenums = this.testForm.get('mobileNums') as FormArray
-     mobilenums.removeAt(i)
-  }
+  regForm =this.fb.group(
+    {
+      name : [null,Validators.required],
+      email : [null,Validators.required],
+      mobilenumber:[9876456783]
+    }
+  )
 
-  test(){
-    console.log(this.testForm)
-  }
   
 
   }

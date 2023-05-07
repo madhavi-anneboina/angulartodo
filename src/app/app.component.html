@@ -10,3 +10,10 @@
 </form>
 
 <button (click)="Add()">Add</button> -->
+
+<form [formGroup]="regForm">
+  name : <input type="text" formControlName="name" />
+  email: <input type="email" formControlName="email" />
+  Mobilenumber:<input type="text" formControlName="mobilenumber" />
+
+</form>
