@@ -14,7 +14,10 @@ export class AppComponent {
   constructor(private fb:FormBuilder){
    
   }
- 
+ regForm = new FormGroup({
+  password : new FormControl()
+
+ })
 
   
 
