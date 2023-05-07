@@ -23,6 +23,10 @@ export class AppComponent {
    mobilenums.push( new FormControl(null,Validators.required))
   
   }
+  delete(i:any){
+    let mobilenums = this.testForm.get('mobileNums') as FormArray
+     mobilenums.removeAt(i)
+  }
 
   test(){
     console.log(this.testForm)

@@ -2,8 +2,8 @@
 <form action="" [formGroup]="testForm">
   <div formArrayName="mobileNums">
     <div let *ngFor="let m of testForm.controls['mobileNums']['controls'];let i=index">
-       Mobilenumber {{i}}  <input type="text" formControlName="{{i}}" class="form-control m-2 w-50" />
-
+       Mobilenumber {{i+1}}  <input type="text" formControlName="{{i}}" class="form-control m-2 w-50" />
+       <button (click)="delete(i)">+</button>
     </div>
 
   </div>
