@@ -18,7 +18,12 @@ export class AppComponent {
     {
       name : [null,Validators.required],
       email : [null,Validators.required],
-      mobilenumber:[9876456783]
+      mobilenumber:this.fb.array(
+        [
+          [],
+          []
+        ]
+      )
     }
   )
 
