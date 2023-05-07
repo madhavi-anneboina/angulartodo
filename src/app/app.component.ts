@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl,FormGroup, Validators } from '@angular/forms';
+import { FormControl,FormGroup, Validators,FormArray} from '@angular/forms';
 
 
 @Component({
@@ -10,13 +10,19 @@ import { FormControl,FormGroup, Validators } from '@angular/forms';
 export class AppComponent {
   title = 'angulartodo';
 
-  login = new FormGroup({
-    uname : new FormControl("",[Validators.required,Validators.minLength(8)]),
-    email : new FormControl("",[Validators.required,Validators.email])
+  testForm = new FormGroup({
+    mobileNums : new FormArray(
+      [
+      new FormControl(),
+      new FormControl()
+    ]
+    )
   })
-  show(){
-    console.log(this.login)
+
+  test(){
+    console.log(this.testForm)
   }
+  
 
   }
 

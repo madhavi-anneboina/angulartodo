@@ -1,1 +1,12 @@
 
+<form action="">
+  <div formArrayName="mobileNums">
+    <div let *ngFor="let m of testForm.controls['mobileNums']['controls']">
+      <input type="text" formControlName="" />
+
+    </div>
+
+  </div>
+</form>
+
+<button (click)="test()">Click</button>
