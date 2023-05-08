@@ -1,6 +1,6 @@
 <form [formGroup]="regForm">
-  <input type="text" formControlName="password"  class="form-control w-50 m-2"/>
-  <p *ngIf="regForm.get('username').touched && regForm.get('username').errors?.['duplicateuser']">
+  <input type="text" formControlName="username"  class="form-control w-50 m-2"/>
+  <p *ngIf="regForm.get('username').touched&&regForm.get('username').errors?.['duplicateuser']">
     User already exists
   </p>
   <button (click) ="show()" class="btn btn-primary">Click</button>

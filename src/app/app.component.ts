@@ -18,14 +18,15 @@ export class AppComponent {
     username: new FormControl(null, [Validators.required], [this.usernameCheck.bind(this)])
   });
 
- users = [
-  "user1","user2","user3"
- ]
+
  usernameCheck =(control:any):Promise<any> =>{
    return new Promise ((resolve,reject)=>{
+   let users = [
+      "user1","user2","user3"
+     ]
     let name = control.value; 
     setTimeout(()=>{
-      if(this.users.indexOf(name)>=0){
+      if(users.indexOf(name)>=0){
         resolve({"duplicateuser":true})
       } else{
         resolve (null)
