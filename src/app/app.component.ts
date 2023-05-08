@@ -15,9 +15,34 @@ export class AppComponent {
    
   }
  regForm = new FormGroup({
-  password : new FormControl(null,[Validators.required,this.uppercaseTest])
+  username : new FormControl(null,Validators.required,this.usernameCheck)
 
  })
+
+ users = [
+  "user1","user2","user3"
+ ]
+ usernameCheck(control:any):Promise<any>{
+  let response = new Promise (
+    (resolve,reject)=>{
+
+    let name = control.value 
+    setTimeout(()=>{
+      if(this.users.indexOf(name)>=0){
+        resolve({"duplicateuser":true})
+      } else{
+        resolve (null)
+      }
+    },2000)
+
+    }
+  )
+
+  return response
+
+  
+
+ }
  uppercaseTest(c:any){
   let pattern = /[A-Z]/
   if(pattern.test(c.value)){
