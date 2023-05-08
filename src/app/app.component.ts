@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http'
 import { FormControl,FormGroup, Validators,FormArray,FormBuilder} from '@angular/forms';
 
 
@@ -9,10 +10,18 @@ import { FormControl,FormGroup, Validators,FormArray,FormBuilder} from '@angular
 })
 export class AppComponent {
   title = 'angulartodo';
+  users:any;
+  constructor(private http:HttpClient){   
+  }
 
- 
-  constructor(private fb:FormBuilder){
-   
+  ngOnInit(){
+   this.users= this.http.get("https://jsonplaceholder.typicode.com/users")
+    // .subscribe(
+    //   (data) =>{
+    //     this.users = data
+    //   }
+
+    // )
   }
 
 
