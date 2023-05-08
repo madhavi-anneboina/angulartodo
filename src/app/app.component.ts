@@ -14,19 +14,16 @@ export class AppComponent {
   constructor(private fb:FormBuilder){
    
   }
- regForm = new FormGroup({
-  username : new FormControl(null,Validators.required,this.usernameCheck)
-
- })
+  regForm = new FormGroup({
+    username: new FormControl(null, [Validators.required], [this.usernameCheck.bind(this)])
+  });
 
  users = [
   "user1","user2","user3"
  ]
- usernameCheck(control:any):Promise<any>{
-  let response = new Promise (
-    (resolve,reject)=>{
-
-    let name = control.value 
+ usernameCheck =(control:any):Promise<any> =>{
+   return new Promise ((resolve,reject)=>{
+    let name = control.value; 
     setTimeout(()=>{
       if(this.users.indexOf(name)>=0){
         resolve({"duplicateuser":true})
@@ -37,12 +34,8 @@ export class AppComponent {
 
     }
   )
-
-  return response
-
-  
-
  }
+
  uppercaseTest(c:any){
   let pattern = /[A-Z]/
   if(pattern.test(c.value)){

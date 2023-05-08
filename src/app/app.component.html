@@ -1,5 +1,7 @@
 <form [formGroup]="regForm">
   <input type="text" formControlName="password"  class="form-control w-50 m-2"/>
-  <p *ngIf="this.regForm.get('password').touched && this.regForm.get('password').errors?.['noupper']"> password contains atleast one Upper case letter</p>
+  <p *ngIf="regForm.get('username').touched && regForm.get('username').errors?.['duplicateuser']">
+    User already exists
+  </p>
   <button (click) ="show()" class="btn btn-primary">Click</button>
 </form>
