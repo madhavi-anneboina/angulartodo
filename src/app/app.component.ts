@@ -17,6 +17,10 @@ export class AppComponent {
   show(f:any){
     console.log(f)
   }
+  handleSubmit(f:any){
+    console.log(f.value)
+    f.reset()
+  }
   ngOnInit(){
    this.users= this.http.get("https://jsonplaceholder.typicode.com/users")
     // .subscribe(

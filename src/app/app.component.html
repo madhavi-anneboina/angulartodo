@@ -2,7 +2,7 @@
 <div class="card w-50 mx-auto mt-4">
   <h4 class="card-header tet-center"> Sign Up</h4>
   <div class="card-body">
-    <form action=""  #r= ngForm >
+    <form action=""  #r= ngForm (ngSubmit)="handleSubmit(r)" >
       <div class="form-group">
         <label>Full Name:</label>
         <input type="text"  ngModel name="fullname" class="form-control" minlength="4" required/>
@@ -35,11 +35,24 @@
         </div>
         </div>
         <label>Confirm Password:</label>
-        <input type="password"  ngModel name="confirmpassword" class="form-control"/> <br/>
+        <input type="password"  ngModel name="confirmpassword" class="form-control" required/> <br/>
         <div *ngIf="r.controls['confirmpassword']?.['touched'] && r.controls['password']?.['value']!= r.controls['confirmpassword']?.['value']">
           passwords must match
         </div>
+        <label>Gender</label>
+        <label>
+          <input type="radio" ngModel name="gender" value="F"/> Female
+        </label>
+        <label>
+          <input type="radio" ngModel name="gender" value="M"/> Male
+        </label> <br/>
+        <div>
+          <label>
+            <input type="checkbox" ngModel name="subscribe"/>
+          </label>
+        </div>
         <button class="btn btn-primary" (click)="show(r)" [disabled]="r.invalid">Signup</button>
+       
       </div>
     </form>
   </div>
