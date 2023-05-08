@@ -7,7 +7,15 @@
         <label>Full Name:</label>
         <input type="text"  ngModel name="fullname" class="form-control"/>
         <label>Email:</label>
-        <input type="email"  ngModel name="email" class="form-control"/>
+        <input type="email"  ngModel name="email" class="form-control" required email/>
+        <div *ngIf="r.controls['email']?.['touched'] && r.controls['email']?.['errors']">
+          <div *ngIf="r.controls['email']?.['errors']?.['required']">
+              Email is required
+          </div>
+          <div *ngIf="r.controls['email']?.['errors']?.['email']">
+            Email is invalid
+        </div>
+        </div>
         <label>Password:</label>
         <input type="text"  ngModel name="password" class="form-control"/>
         <label>Confirm Password:</label>

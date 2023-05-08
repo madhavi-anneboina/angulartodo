@@ -7,3 +7,7 @@ input.ng-touched.ng-valid{
 p{
     color:red
 }
+
+.invalid{
+    color:red
+}
