@@ -7,7 +7,16 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CustomdDirective } from './customd.directive';
 import { RngifDirective } from './rngif.directive';
 import { TestModule } from './test/test.module';
+import { LazyModule } from './lazy/lazy.module';
 
+const routes : Routes = [
+{
+  path:"lazyc1",
+  loadChildren : () =>{
+    import('./lazy/lazy.module').then((m)=>m.LazyModule)
+  }
+}
+]
 
 @NgModule({
   declarations: [
@@ -21,7 +30,9 @@ import { TestModule } from './test/test.module';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    TestModule
+    TestModule,
+     LazyModule
+
   
   ],
   providers: [],
