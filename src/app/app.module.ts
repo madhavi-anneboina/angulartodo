@@ -8,21 +8,23 @@ import { CustomdDirective } from './customd.directive';
 import { RngifDirective } from './rngif.directive';
 import { TestModule } from './test/test.module';
 import { LazyModule } from './lazy/lazy.module';
+import { HomeComponent } from './home/home.component';
 
-const routes : Routes = [
-{
-  path:"lazyc1",
-  loadChildren : () =>{
-    import('./lazy/lazy.module').then((m)=>m.LazyModule)
-  }
-}
-]
+// const routes : Routes = [
+// {
+//   path:"lazyc1",
+//   loadChildren : () =>{
+//     import('./lazy/lazy.module').then((m)=>m.LazyModule)
+//   }
+// }
+// ]
 
 @NgModule({
   declarations: [
     AppComponent,
     CustomdDirective,
-    RngifDirective
+    RngifDirective,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
