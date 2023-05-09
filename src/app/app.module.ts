@@ -4,11 +4,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CustomdDirective } from './customd.directive';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CustomdDirective
   ],
   imports: [
     BrowserModule,

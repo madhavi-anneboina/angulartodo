@@ -14,22 +14,7 @@ export class AppComponent {
   constructor(private http:HttpClient){   
   }
 
-  show(f:any){
-    console.log(f)
-  }
-  handleSubmit(f:any){
-    console.log(f.value)
-    f.reset()
-  }
-  ngOnInit(){
-   this.users= this.http.get("https://jsonplaceholder.typicode.com/users")
-    // .subscribe(
-    //   (data) =>{
-    //     this.users = data
-    //   }
-
-    // )
-  }
+ 
 
 
   }
