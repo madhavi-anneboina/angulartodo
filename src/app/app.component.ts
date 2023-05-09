@@ -9,6 +9,7 @@ import { FormControl,FormGroup, Validators,FormArray,FormBuilder} from '@angular
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  wish ="hello good evning from app component.ts"
   title = 'angulartodo';
   users:any;
   constructor(private http:HttpClient){   
