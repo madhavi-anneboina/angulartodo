@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CustomdDirective } from './customd.directive';
 import { RngifDirective } from './rngif.directive';
+import { TestModule } from './test/test.module';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { RngifDirective } from './rngif.directive';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    TestModule
   
   ],
   providers: [],
