@@ -14,7 +14,10 @@ export class AppComponent {
   constructor(private http:HttpClient){   
   }
 
- 
+ getC(control:any){
+  return this.regForm.get(control)
+
+ }
 
 
   }

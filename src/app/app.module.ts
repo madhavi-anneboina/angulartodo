@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CustomdDirective } from './customd.directive';
+import { RngifDirective } from './rngif.directive';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CustomdDirective
+    CustomdDirective,
+    RngifDirective
   ],
   imports: [
     BrowserModule,
