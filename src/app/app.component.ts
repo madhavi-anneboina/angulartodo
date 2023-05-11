@@ -25,7 +25,7 @@ export class AppComponent {
   ]
 
   addMobile(){
-    let numberList = this.mobileList
+    let numberList = [...this.mobileList,this.mobile]
     numberList.push(this.mobile)
     this.mobile=""
    
