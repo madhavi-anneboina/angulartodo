@@ -5,7 +5,7 @@ import { Component,OnChanges, SimpleChanges,Input,OnInit,DoCheck } from '@angula
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit,DoCheck {
+export class HomeComponent implements OnInit,DoCheck,OnChanges {
   @Input() cdata:any
   @Input() parentdata="child wish "
   @Input() mobiles:any
@@ -29,9 +29,9 @@ constructor(){
   
 
 }
-  // ngOnChanges(changes: SimpleChanges): void {
-  //   console.log("ng on changes implemented ")
-  //   console.log(changes)
-  // }
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log("ng on changes calledS ")
+    console.log(changes)
+  }
 
 }
