@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit,DoCheck,OnChanges {
   ]
 
 ngDoCheck(): void {
-  console.log("Do check called ")
+  
   
 }
 ngOnInit(): void {
@@ -30,8 +30,7 @@ constructor(){
 
 }
   ngOnChanges(changes: SimpleChanges): void {
-    console.log("ng on changes calledS ")
-    console.log(changes)
+  
   }
 
 }

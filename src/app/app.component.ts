@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component,AfterViewInit,AfterViewChecked} from '@angular/core';
 import { HttpClient } from '@angular/common/http'
-import { FormControl,FormGroup, Validators,FormArray,FormBuilder} from '@angular/forms';
+import { FormControl,FormGroup, Validators,FormArray,FormBuilder,} from '@angular/forms';
 
 
 @Component({
@@ -8,13 +8,25 @@ import { FormControl,FormGroup, Validators,FormArray,FormBuilder} from '@angular
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent  implements AfterViewInit,AfterViewChecked{
   wish ="hello good evning from app component.ts"
   title = 'angulartodo';
   users:any;
   mobile=""
-  constructor(private http:HttpClient){   
+  counter=0
+  constructor(private http:HttpClient){  
+
   }
+ngAfterViewInit(): void {
+  console.log("After view init added ")
+}
+ngAfterViewChecked():void{
+console.log("ng view checked")
+}
+
+updateCounter(){
+  this.counter++
+}
 
   mobileList = [
     "Oppo",
