@@ -8,6 +8,7 @@ import { Component,OnChanges, SimpleChanges,Input,OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   @Input() cdata:any
   @Input() parentdata="child wish "
+  @Input() mobiles:any
 
 ngOnInit(): void {
   console.log("onInit called ")

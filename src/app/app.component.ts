@@ -12,7 +12,23 @@ export class AppComponent {
   wish ="hello good evning from app component.ts"
   title = 'angulartodo';
   users:any;
+  mobile=""
   constructor(private http:HttpClient){   
+  }
+
+  mobileList = [
+    "Oppo",
+    "Redmi",
+    "Realme",
+    "Nokia",
+    "Samsung"
+  ]
+
+  addMobile(){
+    let numberList = this.mobileList
+    numberList.push(this.mobile)
+    this.mobile=""
+   
   }
 
 //  getC(control:any){
