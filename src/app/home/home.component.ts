@@ -10,6 +10,14 @@ export class HomeComponent implements OnInit,DoCheck {
   @Input() parentdata="child wish "
   @Input() mobiles:any
 
+  mobileList = [
+    "Oppo",
+    "Redmi",
+    "Realme",
+    "Nokia",
+    "Samsung"
+  ]
+
 ngDoCheck(): void {
   console.log("Do check called ")
   
