@@ -65,6 +65,7 @@
 <app-home [cdata]="wish"></app-home> -->
 <div class="w-50 m-4">
   <input type="text" class="form-control" [(ngModel)]="mobile"/>
-  <button class="btn btn-primary mt-2" (click)="addMobile()" ></button>
+  <button class="btn btn-primary mt-2" (click)="addMobile()"> Add </button>
 </div>
+{{mobileList}}
 <app-home [mobiles]="mobileList"></app-home>

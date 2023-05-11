@@ -1,27 +1,29 @@
-import { Component,OnChanges, SimpleChanges,Input,OnInit } from '@angular/core';
+import { Component,OnChanges, SimpleChanges,Input,OnInit,DoCheck } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit,DoCheck {
   @Input() cdata:any
   @Input() parentdata="child wish "
   @Input() mobiles:any
 
+ngDoCheck(): void {
+  console.log("Do check called ")
+  
+}
 ngOnInit(): void {
-  console.log("onInit called ")
-  console.log("onInit",this.parentdata)
+ 
 }
 constructor(){
-  console.log("constructor callde")
-  console.log("In constructor",this.parentdata)
+  
 
 }
-  ngOnChanges(changes: SimpleChanges): void {
-    console.log("ng on changes implemented ")
-    console.log(changes)
-  }
+  // ngOnChanges(changes: SimpleChanges): void {
+  //   console.log("ng on changes implemented ")
+  //   console.log(changes)
+  // }
 
 }
