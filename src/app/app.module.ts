@@ -9,22 +9,33 @@ import { RngifDirective } from './rngif.directive';
 import { TestModule } from './test/test.module';
 import { LazyModule } from './lazy/lazy.module';
 import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { RouterModule, Routes } from '@angular/router';
 
-// const routes : Routes = [
-// {
-//   path:"lazyc1",
-//   loadChildren : () =>{
-//     import('./lazy/lazy.module').then((m)=>m.LazyModule)
-//   }
-// }
-// ]
+const routes: Routes = [
+  {
+    path: 'home',
+    component: HomeComponent,
+  },
+  {
+    path: 'about',
+    component: AboutComponent,
+  },
+  {
+    path: 'contact',
+    component: ContactComponent,
+  },
+];
 
 @NgModule({
   declarations: [
     AppComponent,
     CustomdDirective,
     RngifDirective,
-    HomeComponent
+    HomeComponent,
+    AboutComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,11 +44,10 @@ import { HomeComponent } from './home/home.component';
     ReactiveFormsModule,
     HttpClientModule,
     TestModule,
-     LazyModule
-
-  
+    LazyModule,
+    RouterModule.forRoot(routes),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

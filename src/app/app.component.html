@@ -63,7 +63,7 @@
 <!-- <h1>This is from app component</h1>
 <input type="text" [(ngModel)]="wish"/>
 <app-home [cdata]="wish"></app-home> -->
-<div class="w-50 m-4">
+<!-- <div class="w-50 m-4">
   <input type="text" class="form-control" [(ngModel)]="mobile"/>
   <button class="btn btn-primary mt-2" (click)="addMobile()"> Add </button>
 </div>
@@ -74,4 +74,18 @@
 </app-home>
 
 <button (click)="updateCounter()">Increment</button>
-{{counter}}
+{{counter}} -->
+
+<ul>
+  <li>
+   <a routerLink="/home" routerLinkActive="active"> Home</a>
+  </li>
+  <li>
+    <a routerLink="/about" routerLinkActive="active"> About</a>
+   </li>
+   <li>
+    <a routerLink="/contact" routerLinkActive="active"> Contact</a>
+   </li>
+</ul>
+
+<router-outlet></router-outlet>
