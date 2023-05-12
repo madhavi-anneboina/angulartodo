@@ -20,9 +20,19 @@ export class AppComponent   {
 
   }
 
-  obs = new Observable (()=>{
-    
+  obs = new Observable ((nums)=>{
+    nums.next(100)
+    nums.next("rxjs")
+    nums.next("hello")
+
   })
+  ngOninit(){
+    this.obs.subscribe(
+      data=> console.log(data),
+      err=> console.log(err),
+      ()=>console.log("complete")
+    )
+  }
 // ngAfterViewInit(): void {
 //   console.log("After view init added ")
 // }
