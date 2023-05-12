@@ -16,20 +16,21 @@ export class AppComponent   {
   users:any;
   mobile=""
   counter=0
-  constructor(private http:HttpClient){  
+  constructor(){  
 
   }
+ 
 
-  obs = new Observable ((nums)=>{
+  name = new Observable ((nums)=>{
     nums.next(100)
     nums.next("rxjs")
     nums.next("hello")
 
   })
   ngOninit(){
-    this.obs.subscribe(
-      data=> console.log(data),
-      err=> console.log(err),
+    this.name.subscribe(
+      data=>console.log(data),
+      err=>console.log(err),
       ()=>console.log("complete")
     )
   }
