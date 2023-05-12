@@ -1,6 +1,8 @@
 import { Component,AfterViewInit,AfterViewChecked} from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { FormControl,FormGroup, Validators,FormArray,FormBuilder,} from '@angular/forms';
+import { Observable } from 'rxjs';
+
 
 
 @Component({
@@ -8,7 +10,7 @@ import { FormControl,FormGroup, Validators,FormArray,FormBuilder,} from '@angula
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent  implements AfterViewInit,AfterViewChecked{
+export class AppComponent   {
   wish ="hello good evning from app component.ts"
   title = 'angulartodo';
   users:any;
@@ -17,16 +19,20 @@ export class AppComponent  implements AfterViewInit,AfterViewChecked{
   constructor(private http:HttpClient){  
 
   }
-ngAfterViewInit(): void {
-  console.log("After view init added ")
-}
-ngAfterViewChecked():void{
-console.log("ng view checked")
-}
 
-updateCounter(){
-  this.counter++
-}
+  obs = new Observable (()=>{
+    
+  })
+// ngAfterViewInit(): void {
+//   console.log("After view init added ")
+// }
+// ngAfterViewChecked():void{
+// console.log("ng view checked")
+// }
+
+// updateCounter(){
+//   this.counter++
+// }
 
   mobileList = [
     "Oppo",
