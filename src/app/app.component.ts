@@ -27,12 +27,19 @@ export class AppComponent   {
     nums.next("hello")
 
   })
+  arr:any =[]
   ngOninit(){
-    this.name.subscribe(
-      data=>console.log(data),
-      err=>console.log(err),
-      ()=>console.log("complete")
-    )
+    setTimeout(()=>{
+     this.name.subscribe(
+      {
+        next : (data)=> this.arr.push(data),
+        error : (err)=> console.log(err),
+        complete:() => console.info("complete")
+      }
+     )
+
+    })
+  
   }
 // ngAfterViewInit(): void {
 //   console.log("After view init added ")
