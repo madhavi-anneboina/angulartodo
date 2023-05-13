@@ -19,4 +19,9 @@ todolist = new Subject()
    sendTodos(){
     this.todolist.next(this.todos)
    }
+   addNewTodo(t:any){
+    this.todos.push(t)
+    this.todolist.next(t)
+
+   }
 }

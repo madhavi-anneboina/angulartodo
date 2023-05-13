@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TodoService } from '../todo.service';
 
 @Component({
   selector: 'app-todo',
@@ -6,6 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./todo.component.css']
 })
 export class TodoComponent {
- 
+ constructor(private ts:TodoService){}
+addTodo(t:string){
+  this.ts.addNewTodo(t)
 
+}
 }
