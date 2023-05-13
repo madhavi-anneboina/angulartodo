@@ -12,6 +12,8 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { RouterModule, Routes } from '@angular/router';
+import { TodoComponent } from './todo/todo.component';
+import { TodolistComponent } from './todolist/todolist.component';
 
 const routes: Routes = [
   {
@@ -36,6 +38,8 @@ const routes: Routes = [
     HomeComponent,
     AboutComponent,
     ContactComponent,
+    TodoComponent,
+    TodolistComponent,
   ],
   imports: [
     BrowserModule,
