@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -10,6 +11,12 @@ export class TodoService {
     "task3",
     "task4"
   ]
+todolist = new Subject()
+  constructor() {
+    this.sendTodos()
 
-  constructor() { }
+   }
+   sendTodos(){
+    this.todolist.next(this.todos)
+   }
 }
