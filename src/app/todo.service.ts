@@ -21,7 +21,7 @@ todolist = new Subject()
    }
    addNewTodo(t:any){
     this.todos.push(t)
-    this.todolist.next(t)
+    this.sendTodos()
 
    }
 }
