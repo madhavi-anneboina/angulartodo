@@ -24,20 +24,21 @@ export class AppComponent   {
 
   }
  ngOnInit(): void{
-  this.bs = this.td.s1.subscribe(
-    (data:any)=>{
-      console.log(data)
-    }
-  )
-  this.ss = this.td.s2.subscribe(
-    (t:any)=>{
-      console.log(t)
-    }
-  )
+ this.td.bs.subscribe(
+  (data)=>{
+    console.log(data)
+  }
+ )
+ this.td.rs.subscribe(
+  (data)=>{
+    console.log(data)
+  }
+ )
+
  }
 
  emit(){
-  this.ss.next("second data")
+//   this.ss.next("second data")
 
  }
 

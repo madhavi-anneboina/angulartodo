@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Subject } from 'rxjs';
+import { BehaviorSubject, ReplaySubject, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -11,13 +11,16 @@ export class TodoService {
     "task3",
     "task4"
   ]
-s1 = new BehaviorSubject("Behaviour subject first data")
-s2 = new Subject()
+bs= new BehaviorSubject("Behaviour subject first data")
+rs = new ReplaySubject()
 todolist = new Subject()
   constructor() {
     this.sendTodos()
-    this.s2.next("simple subjects")
-    this.s1.next("behaviour subject second data")
+  
+    this.bs.next("behaviour subject 1")
+    this.bs.next("behaviour subject 2")
+    this.rs.next("replay subject 1")
+    this.rs.next("replay subject 2")
 
    }
    sendTodos(){
