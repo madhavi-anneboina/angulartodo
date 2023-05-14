@@ -30,9 +30,18 @@ export class AppComponent   {
   //     console.log(data)
   //   }
   // )
-  of().subscribe(
-    
+ let obs = of (3,4,5,6).pipe(
+  map(
+    (data)=>{
+      return data*2
+    }
   )
+ )
+ obs.subscribe(
+  (data)=>{
+    console.log(data)
+  }
+ )
  this.td.bs.subscribe(
   (data)=>{
     console.log(data)
