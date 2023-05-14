@@ -35,6 +35,16 @@ export class AppComponent   {
   }
  )
 
+ this.td.as.subscribe(
+  (data)=>{
+    console.log(data)
+  }
+)
+
+
+ }
+ add(){
+  this.td.as.complete()
  }
 
  emit(){
