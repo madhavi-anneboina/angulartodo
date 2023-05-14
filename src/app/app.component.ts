@@ -1,7 +1,7 @@
 import { Component,AfterViewInit,AfterViewChecked,OnInit} from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { FormControl,FormGroup, Validators,FormArray,FormBuilder} from '@angular/forms';
-import { Observable, of,from,range} from 'rxjs';
+import { Observable, of,from,range,interval} from 'rxjs';
 import { TodoService } from './todo.service';
 
 
@@ -25,7 +25,7 @@ export class AppComponent   {
 
   }
  ngOnInit(): void{
-  range(2,9).subscribe(
+  interval(100000000000).subscribe(
     (data)=>{
       console.log(data)
     }
