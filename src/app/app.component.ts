@@ -1,7 +1,7 @@
 import { Component,AfterViewInit,AfterViewChecked,OnInit} from '@angular/core';
 import { HttpClient } from '@angular/common/http'
-import { FormControl,FormGroup, Validators,FormArray,FormBuilder,} from '@angular/forms';
-import { Observable, of,from } from 'rxjs';
+import { FormControl,FormGroup, Validators,FormArray,FormBuilder} from '@angular/forms';
+import { Observable, of,from,range} from 'rxjs';
 import { TodoService } from './todo.service';
 
 
@@ -25,7 +25,7 @@ export class AppComponent   {
 
   }
  ngOnInit(): void{
-  from([7,8,9]).subscribe(
+  range(2,9).subscribe(
     (data)=>{
       console.log(data)
     }
