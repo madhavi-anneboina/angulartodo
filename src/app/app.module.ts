@@ -14,11 +14,16 @@ import { ContactComponent } from './contact/contact.component';
 import { RouterModule, Routes } from '@angular/router';
 import { TodoComponent } from './todo/todo.component';
 import { TodolistComponent } from './todolist/todolist.component';
+import { ProductsComponent } from './products/products.component';
 
 const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent,
+  },
+  {
+    path: 'products',
+    component: ProductsComponent,
   },
   {
     path: 'about',
@@ -40,6 +45,7 @@ const routes: Routes = [
     ContactComponent,
     TodoComponent,
     TodolistComponent,
+    ProductsComponent,
   ],
   imports: [
     BrowserModule,
