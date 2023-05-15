@@ -17,6 +17,7 @@ import { TodolistComponent } from './todolist/todolist.component';
 import { ProductsComponent } from './products/products.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
 
 const routes: Routes = [
   {
@@ -59,7 +60,9 @@ const routes: Routes = [
     LazyModule,
     RouterModule.forRoot(routes),
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule
+
   ],
   providers: [],
   bootstrap: [AppComponent],
