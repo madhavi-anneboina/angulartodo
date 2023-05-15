@@ -1,7 +1,7 @@
 import { Component,AfterViewInit,AfterViewChecked,OnInit} from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { FormControl,FormGroup, Validators,FormArray,FormBuilder} from '@angular/forms';
-import { Observable, of,from,range,interval,map} from 'rxjs';
+import { Observable, of,from,range,interval,map,filter} from 'rxjs';
 import { TodoService } from './todo.service';
 
 
@@ -31,9 +31,9 @@ export class AppComponent   {
   //   }
   // )
  let obs = of (3,4,5,6).pipe(
-  map(
+  filter(
     (data)=>{
-      return data*2
+      return (data % 2 == 0)
     }
   )
  )
