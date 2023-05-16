@@ -14,7 +14,7 @@ export class AppComponent  {
   @ViewChild('mobile')m:any
   @ViewChild('text')ip:any
    obs1 = of (3,4,5,6)
-   obs2 = from(["c","s"])
+   obs2 = interval(1000)
    obs3 = merge(this.obs1,this.obs2)
   constructor(private td:TodoService){  
   
