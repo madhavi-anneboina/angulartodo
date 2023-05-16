@@ -4,11 +4,11 @@
 .logo{
     margin-left:20px;
 }
-.example-container {
+.sidenav{
     position: absolute;
-    top: 0;
-    bottom: 0;
+     top: 60px;
+    /* bottom: 0;
     left: 0;
-    right: 0;
+    right: 0;  */
     background: #eee;
   }
