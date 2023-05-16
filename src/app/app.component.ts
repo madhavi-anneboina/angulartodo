@@ -15,7 +15,7 @@ export class AppComponent  {
   @ViewChild('text')ip:any
    obs1 = of (3,4,5,6)
   //  obs2 = from("asdasffdsgds")
-   obs2 = interval(1000).pipe(
+   obs2 = of(20,30,40,90,60,70,80,100,200,300,400).pipe(
     take(5)
    )
    obs3 = merge(this.obs1,this.obs2)
