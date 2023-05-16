@@ -61,6 +61,9 @@ export class AppComponent implements OnInit,AfterViewInit {
  }
  ngAfterViewInit():void{
   fromEvent(this.ip.nativeElement,'keyup')
+  .pipe(
+    debounceTime(5000)
+  )
   .subscribe(
     (data:any)=>{
       console.log(data.target.value)
