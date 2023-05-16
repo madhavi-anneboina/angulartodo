@@ -13,22 +13,14 @@ import { TodoService } from './todo.service';
 export class AppComponent  {
   @ViewChild('mobile')m:any
   @ViewChild('text')ip:any
-
+   obs1 = of (3,4,5,6)
+   obs2 = from(["c","s"])
   constructor(private td:TodoService){  
-
+  
   }
+  
 
  ngOnInit(): void {
-
- 
-
- let obs = of (3,4,5,6)
-
-
-
-
-
-
 
  }
 
