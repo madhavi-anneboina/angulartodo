@@ -10,16 +10,10 @@ import { TodoService } from './todo.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit,AfterViewInit {
+export class AppComponent  {
   @ViewChild('mobile')m:any
   @ViewChild('text')ip:any
-  wish ="hello good evning from app component.ts"
-  title = 'angulartodo';
-  users:any;
-  mobile=""
-  counter=0
-  ss:any
-  bs:any
+
   constructor(private td:TodoService){  
 
   }
@@ -28,75 +22,21 @@ export class AppComponent implements OnInit,AfterViewInit {
 
  
 
- let obs = of (3,4,5,6).pipe(
-  filter(
-    (data)=>{
-      return (data % 2 == 0)
-    }
-  )
- )
- obs.subscribe(
-  (data)=>{
-    console.log(data)
-  }
- )
- this.td.bs.subscribe(
-  (data)=>{
-    console.log(data)
-  }
- )
- this.td.rs.subscribe(
-  (data)=>{
-    console.log(data)
-  }
- )
+ let obs = of (3,4,5,6)
 
- this.td.as.subscribe(
-  (data)=>{
-    console.log(data)
-  }
-)
+
+
+
+
 
 
  }
- ngAfterViewInit():void{
-  fromEvent(this.ip.nativeElement,'keyup')
-  .pipe(
-    debounceTime(5000)
-  )
-  .subscribe(
-    (data:any)=>{
-      console.log(data.target.value)
-    }
-  )
- }
- add(){
-  this.td.as.complete()
- }
 
- emit(){
-//   this.ss.next("second data")
 
- }
 
-  name = new Observable ((nums)=>{
-    nums.next(100)
-    nums.next("rxjs")
-    nums.next("hello")
 
-  })
-  arr:any =[]
-  ngOninit(){
-    setTimeout(()=>{
-     this.name.subscribe(
-      {
-        next : (data)=> this.arr.push(data),
-        error : (err)=> console.log(err),
-        complete:() => console.info("complete")
-      }
-     )
 
-    })
+ 
   
   }
 // ngAfterViewInit(): void {
@@ -110,20 +50,9 @@ export class AppComponent implements OnInit,AfterViewInit {
 //   this.counter++
 // }
 
-  mobileList = [
-    "Oppo",
-    "Redmi",
-    "Realme",
-    "Nokia",
-    "Samsung"
-  ]
 
-  addMobile(){
-    let numberList = [...this.mobileList,this.mobile]
-    numberList.push(this.mobile)
-    this.mobile=""
-   
-  }
+
+
 
 //  getC(control:any){
 //   return this.regForm.get(control)
@@ -131,5 +60,5 @@ export class AppComponent implements OnInit,AfterViewInit {
 //  }
 
 
-  }
+  
 
