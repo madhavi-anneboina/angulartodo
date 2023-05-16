@@ -1,13 +1,14 @@
-input.ng-touched.ng-invalid{
-    border:2px solid red;
+.extra {
+    flex:1 1 auto;
 }
-input.ng-touched.ng-valid{
-    border : 2px solid green
+.logo{
+    margin-left:20px;
 }
-p{
-    color:red
-}
-
-.invalid{
-    color:red
-}
+.example-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #eee;
+  }
