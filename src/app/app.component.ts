@@ -1,12 +1,8 @@
 import { Component,AfterViewInit,AfterViewChecked,OnInit, ViewChild} from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { FormControl,FormGroup, Validators,FormArray,FormBuilder} from '@angular/forms';
-import { Observable, of,from,range,interval,map,filter,fromEvent} from 'rxjs';
+import { Observable, of,from,range,interval,map,filter,fromEvent,debounceTime} from 'rxjs';
 import { TodoService } from './todo.service';
-
-
-
-
 
 
 @Component({
@@ -14,8 +10,9 @@ import { TodoService } from './todo.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent   {
+export class AppComponent implements OnInit,AfterViewInit {
   @ViewChild('mobile')m:any
+  @ViewChild('text')ip:any
   wish ="hello good evning from app component.ts"
   title = 'angulartodo';
   users:any;
@@ -26,6 +23,7 @@ export class AppComponent   {
   constructor(private td:TodoService){  
 
   }
+
  ngOnInit(): void {
 
  
@@ -62,7 +60,7 @@ export class AppComponent   {
 
  }
  ngAfterViewInit():void{
-  fromEvent(this.m.nativeElement,'keyup')
+  fromEvent(this.ip.nativeElement,'keyup')
   .subscribe(
     (data:any)=>{
       console.log(data.target.value)
