@@ -63,7 +63,7 @@ export class AppComponent implements OnInit,AfterViewInit {
   fromEvent(this.ip.nativeElement,'keyup')
   .subscribe(
     (data:any)=>{
-      console.log(data.taget.value)
+      console.log(data.target.value)
     }
   )
  }
