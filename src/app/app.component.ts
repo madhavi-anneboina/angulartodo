@@ -1,7 +1,7 @@
 import { Component,AfterViewInit,AfterViewChecked,OnInit, ViewChild} from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { FormControl,FormGroup, Validators,FormArray,FormBuilder} from '@angular/forms';
-import { Observable, of,from,range,interval,map,filter,fromEvent,debounceTime} from 'rxjs';
+import { Observable, of,from,range,interval,map,filter,fromEvent,debounceTime,merge} from 'rxjs';
 import { TodoService } from './todo.service';
 
 
@@ -15,12 +15,18 @@ export class AppComponent  {
   @ViewChild('text')ip:any
    obs1 = of (3,4,5,6)
    obs2 = from(["c","s"])
+   obs3 = merge(this.obs1,this.obs2)
   constructor(private td:TodoService){  
   
   }
   
 
  ngOnInit(): void {
+  this.obs3.subscribe(
+    (data)=>{
+      console.log(data)
+    }
+  )
 
  }
 
