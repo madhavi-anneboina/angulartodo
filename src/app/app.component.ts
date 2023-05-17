@@ -1,7 +1,7 @@
 import { Component,AfterViewInit,AfterViewChecked,OnInit, ViewChild} from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { FormControl,FormGroup, Validators,FormArray,FormBuilder} from '@angular/forms';
-import { Observable, of,from,range,interval,map,filter,fromEvent,debounceTime,merge,take,pluck} from 'rxjs';
+import { Observable, of,from,range,interval,map,filter,fromEvent,debounceTime,merge,take,pluck,skip} from 'rxjs';
 import { TodoService } from './todo.service';
 
 
@@ -245,8 +245,7 @@ export class AppComponent  {
       "bs": "target end-to-end models"
     }
   }
-]).pipe(pluck("address","geo","lat")
-)
+]).pipe(skip(2))
   
 
  ngOnInit(): void {
