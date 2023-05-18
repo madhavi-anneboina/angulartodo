@@ -124,11 +124,7 @@ export class AppComponent  {
     },
     "phone": "(775)976-6794 x41206",
     "website": "conrad.com",
-    "company": {
-      "name": "Yost and Sons",
-      "catchPhrase": "Switchable contextually-based project",
-      "bs": "aggregate real-time technologies"
-    }
+   
   },
 
 ]).pipe(skip(2))
