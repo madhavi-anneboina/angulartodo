@@ -15,22 +15,7 @@ export class AppComponent  {
   @ViewChild('text')ip:any
   
  obs = from ([
-  {
-    "id": 2,
-    "name": "Ervin Howell",
-    "username": "Antonette",
-    "email": "Shanna@melissa.tv",
-    "address": {
-      "street": "Victor Plains",
-      "suite": "Suite 879",
-      "city": "Wisokyburgh",
-      "zipcode": "90566-7771",
-     
-    },
-    "phone": "010-692-6593 x09125",
-    "website": "anastasia.net",
-  
-  },
+
   {
     "id": 3,
     "name": "Clementine Bauch",
