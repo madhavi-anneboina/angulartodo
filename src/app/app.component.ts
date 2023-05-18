@@ -15,17 +15,6 @@ export class AppComponent  {
   @ViewChild('text')ip:any
   
  obs = from ([
-
-  {
-    "id": 4,
-    "name": "Patricia Lebsack",
-    "username": "Karianne",
-    "email": "Julianne.OConner@kory.org",
-   
-    "phone": "493-170-9623 x156",
-    "website": "kale.biz",
-   
-  },
   {
     "id": 5,
     "name": "Chelsey Dietrich",
@@ -156,13 +145,8 @@ export class AppComponent  {
         "lng": "57.2232"
       }
     },
-    "phone": "024-648-3804",
-    "website": "ambrose.net",
-    "company": {
-      "name": "Hoeger LLC",
-      "catchPhrase": "Centralized empowering task-force",
-      "bs": "target end-to-end models"
-    }
+    
+  
   }
 ]).pipe(skip(2))
   
