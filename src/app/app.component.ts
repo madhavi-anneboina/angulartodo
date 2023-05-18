@@ -130,24 +130,7 @@ export class AppComponent  {
       "bs": "aggregate real-time technologies"
     }
   },
-  {
-    "id": 10,
-    "name": "Clementina DuBuque",
-    "username": "Moriah.Stanton",
-    "email": "Rey.Padberg@karina.biz",
-    "address": {
-      "street": "Kattie Turnpike",
-      "suite": "Suite 198",
-      "city": "Lebsackbury",
-      "zipcode": "31428-2261",
-      "geo": {
-        "lat": "-38.2386",
-        "lng": "57.2232"
-      }
-    },
-    
-  
-  }
+
 ]).pipe(skip(2))
   
 
