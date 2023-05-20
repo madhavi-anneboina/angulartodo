@@ -32,11 +32,7 @@ export class AppComponent  {
     },
     "phone": "586.493.6943 x140",
     "website": "jacynthe.com",
-    "company": {
-      "name": "Abernathy Group",
-      "catchPhrase": "Implemented secondary concept",
-      "bs": "e-enable extensible e-tailers"
-    }
+   
   },
 
 
