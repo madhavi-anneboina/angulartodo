@@ -14,23 +14,12 @@ export class AppComponent  {
   @ViewChild('mobile')m:any
   @ViewChild('text')ip:any
   
- obs = from ([
- 
 
- 
- 
-
-
-]).pipe(skip(2))
   
 
  ngOnInit(): void {
 
-  this.obs.subscribe(
-    (data)=>{
-      console.log(data)
-    }
-  )
+  
 
 
  }
