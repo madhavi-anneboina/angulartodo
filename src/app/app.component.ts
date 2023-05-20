@@ -22,13 +22,7 @@ export class AppComponent  {
     "name": "Kurtis Weissnat",
     "username": "Elwyn.Skiles",
     "email": "Telly.Hoeger@billy.biz",
-    "address": {
-      "street": "Rex Trail",
-      "suite": "Suite 280",
-      "city": "Howemouth",
-      "zipcode": "58804-1099",
-     
-    },
+    
     "phone": "210.067.6132",
     "website": "elvis.io",
     "company": {
