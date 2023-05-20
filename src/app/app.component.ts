@@ -28,10 +28,7 @@ export class AppComponent  {
       "suite": "Suite 729",
       "city": "Aliyaview",
       "zipcode": "45169",
-      "geo": {
-        "lat": "-14.3990",
-        "lng": "-120.7677"
-      }
+     
     },
     "phone": "586.493.6943 x140",
     "website": "jacynthe.com",
@@ -41,12 +38,7 @@ export class AppComponent  {
       "bs": "e-enable extensible e-tailers"
     }
   },
-  {
-    "id": 9,
-    "name": "Glenna Reichert",
-    "username": "Delphine",
-    "email": "Chaim_McDermott@dana.io",
-  },
+
 
 ]).pipe(skip(2))
   
