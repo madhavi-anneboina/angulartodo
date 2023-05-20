@@ -27,10 +27,7 @@ export class AppComponent  {
       "suite": "Suite 280",
       "city": "Howemouth",
       "zipcode": "58804-1099",
-      "geo": {
-        "lat": "24.8918",
-        "lng": "21.8984"
-      }
+     
     },
     "phone": "210.067.6132",
     "website": "elvis.io",
