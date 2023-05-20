@@ -23,13 +23,7 @@ export class AppComponent  {
     "name": "Nicholas Runolfsdottir V",
     "username": "Maxime_Nienow",
     "email": "Sherwood@rosamond.me",
-    "address": {
-      "street": "Ellsworth Summit",
-      "suite": "Suite 729",
-      "city": "Aliyaview",
-      "zipcode": "45169",
-     
-    },
+   
     "phone": "586.493.6943 x140",
     "website": "jacynthe.com",
    
