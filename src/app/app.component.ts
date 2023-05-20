@@ -25,11 +25,7 @@ export class AppComponent  {
     
     "phone": "210.067.6132",
     "website": "elvis.io",
-    "company": {
-      "name": "Johns Group",
-      "catchPhrase": "Configurable multimedia task-force",
-      "bs": "generate enterprise e-tailers"
-    }
+   
   },
   {
     "id": 8,
