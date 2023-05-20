@@ -18,16 +18,7 @@ export class AppComponent  {
  
 
  
-  {
-    "id": 8,
-    "name": "Nicholas Runolfsdottir V",
-    "username": "Maxime_Nienow",
-    "email": "Sherwood@rosamond.me",
-   
-    "phone": "586.493.6943 x140",
-    "website": "jacynthe.com",
-   
-  },
+ 
 
 
 ]).pipe(skip(2))
