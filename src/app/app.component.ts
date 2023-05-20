@@ -17,16 +17,7 @@ export class AppComponent  {
  obs = from ([
  
 
-  {
-    "id": 7,
-    "name": "Kurtis Weissnat",
-    "username": "Elwyn.Skiles",
-    "email": "Telly.Hoeger@billy.biz",
-    
-    "phone": "210.067.6132",
-    "website": "elvis.io",
-   
-  },
+ 
   {
     "id": 8,
     "name": "Nicholas Runolfsdottir V",
