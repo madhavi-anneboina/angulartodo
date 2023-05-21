@@ -23,16 +23,7 @@
           <div *ngIf="r.controls['email']?.['errors']?.['email']">
             Email is invalid
         </div>
-        </div>
-        <label>Password:</label>
-        <input type="text"  ngModel name="password" class="form-control" minlength="8" required/>
-        <div *ngIf="r.controls['password']?.['touched'] && r.controls['password']?.['errors']">
-          <div *ngIf="r.controls['password']?.['errors']?.['required']">
-              Password required
-          </div>
-          <div *ngIf="r.controls['password']?.['errors']?.['minlength']">
-            password atlesat 8 characters
-        </div>
+       
 
 
 
