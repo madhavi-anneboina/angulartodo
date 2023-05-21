@@ -38,9 +38,6 @@ export class AppComponent  {
 // console.log("ng view checked")
 // }
 
-// updateCounter(){
-//   this.counter++
-// }
 
 
 
