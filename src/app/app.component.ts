@@ -34,9 +34,6 @@ export class AppComponent  {
 // ngAfterViewInit(): void {
 //   console.log("After view init added ")
 // }
-// ngAfterViewChecked():void{
-// console.log("ng view checked")
-// }
 
 
 
