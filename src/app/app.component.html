@@ -9,20 +9,7 @@
         <div *ngIf="r.controls['fullname']?.['touched'] && r.controls['fullname']?.['errors']">
           <div *ngIf="r.controls['fullname']?.['errors']?.['required']">
               full name required
-          </div>
-          <div *ngIf="r.controls['fullname']?.['errors']?.['minlength']">
-            full name atlesat 4 characters
-        </div>
-        </div>
-        <label>Email:</label>
-        <input type="email"  ngModel name="email" class="form-control" required email/>
-        <div *ngIf="r.controls['email']?.['touched'] && r.controls['email']?.['errors']">
-          <div *ngIf="r.controls['email']?.['errors']?.['required']">
-              Email is required
-          </div>
-          <div *ngIf="r.controls['email']?.['errors']?.['email']">
-            Email is invalid
-        </div>
+        
        
 
 
