@@ -19,7 +19,7 @@ export class AppComponent  {
 
  ngOnInit(): void {
 
-  
+
 
 
  }
@@ -45,11 +45,6 @@ export class AppComponent  {
 
 
 
-
-//  getC(control:any){
-//   return this.regForm.get(control)
-
-//  }
 
 
   
