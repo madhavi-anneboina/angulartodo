@@ -32,5 +32,6 @@
 
   p[title]{
     background-color: red;
-    color:white
+    color:white;
+    font-size: 20px;
   }
