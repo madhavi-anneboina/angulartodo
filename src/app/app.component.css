@@ -17,6 +17,10 @@
     text-transform: uppercase;
     color: red;
   }
+  h2::before{
+    content:"before element used";
+    color:"pink"
+  }
   p::first-line{
     font-size: 25px;
     color:blue
