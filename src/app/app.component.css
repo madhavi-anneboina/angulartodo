@@ -25,7 +25,12 @@
     font-size: 25px;
     color:blue
   } */
-  p::selection{
+  /* p::selection{
     background: black;
+    color:white
+  } */
+
+  p[title]{
+    background-color: red;
     color:white
   }
