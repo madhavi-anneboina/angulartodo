@@ -21,7 +21,11 @@
     content:"before element used";
     color: pink
   }
-  p::first-line{
+  /* p::first-line{
     font-size: 25px;
     color:blue
+  } */
+  p::selection{
+    background: black;
+    color:white
   }
