@@ -30,7 +30,7 @@
     color:white
   } */
 
-  p[title *= "p"]{
+  p[type ="email"]{
     background-color: red;
     color:white;
     font-size: 20px;
