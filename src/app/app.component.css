@@ -30,7 +30,7 @@
     color:white
   } */
 
-  p[title = "p"]{
+  p[title ^= "p"]{
     background-color: red;
     color:white;
     font-size: 20px;
