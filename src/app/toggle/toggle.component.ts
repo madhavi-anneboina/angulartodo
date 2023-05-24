@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+// import { fa-EmptyError } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-toggle',

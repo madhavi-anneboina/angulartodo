@@ -7,8 +7,8 @@
         <div class="filed">
             <label for="">Password</label>
             <input [type]="showpassword ?'text':'password' " class="form-control" />
-            <i class="fa-solid fa-eye"></i>
-            <i class="fa-solid fa-eye-slash"></i>
+            <i class="fa-solid fa-eye" *ngIf="!showpassword"></i>
+            <i class="fa-solid fa-eye-slash" *ngIf="showpassword"></i>
         </div>
     </div>
 </div>
