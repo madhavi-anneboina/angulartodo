@@ -14,9 +14,14 @@ export class AppComponent  {
   @ViewChild('mobile')m:any
   @ViewChild('text')ip:any
   
+  show = false
 
-  
+  constructor(){
 
+  }
+  openpopup(){
+    this.show = true
+  }
  ngOnInit(): void {
 
 

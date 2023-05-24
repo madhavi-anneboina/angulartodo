@@ -1,10 +1,10 @@
 <div class="wrapper">
-    <button class="btn btn-primary">Popup</button>
+    <button class="btn btn-primary" (click)="openpopup()">Popup</button>
 </div>
-<div class="overlay">
+<div class="overlay" *ngIf="show">
     <div class="content">
         username : <input type="text" class="form-control"/>
         password : <input type="password" class="form-control"/>
-        <button class="btn btn-primary">Sign in </button>
+        <button class="btn btn-primary mt-4">Sign in </button>
     </div>
 </div>
