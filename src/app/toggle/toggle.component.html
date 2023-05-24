@@ -1,8 +1,14 @@
 <div class="overlay">
     <div class="form">
-    <div class="filed">
-    <label for="">User name</label>
-    <input type="text" class="form-control" />
-    </div>
+        <div class="filed">
+            <label for="">User name</label>
+            <input type="text" class="form-control" />
+        </div>
+        <div class="filed">
+            <label for="">Password</label>
+            <input [type]="showpassword ?'text':'password' " class="form-control" />
+            <i class="fa-solid fa-eye"></i>
+            <i class="fa-solid fa-eye-slash"></i>
+        </div>
     </div>
 </div>

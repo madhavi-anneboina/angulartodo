@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './toggle.component.html',
   styleUrls: ['./toggle.component.css']
 })
-export class ToggleComponent {
+export class ToggleComponent { 
+  showpassword = true
 
 }
