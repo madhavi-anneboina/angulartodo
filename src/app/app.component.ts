@@ -22,6 +22,15 @@ export class AppComponent  {
   openpopup(){
     this.show = true
   }
+  closepopup(){
+    this.show = false
+  }
+  closeoverlay(e:any){
+    // if(e.target.classList.contains('overlay')){
+    //   this.show = false
+    // }
+   this.show = false 
+  }
  ngOnInit(): void {
 
 

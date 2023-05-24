@@ -60,3 +60,7 @@
     height: 300px;
     padding: 20px;
   }
+  .close{
+    position: relative;
+    top:-10px;
+  }
