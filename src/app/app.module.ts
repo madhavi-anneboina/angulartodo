@@ -21,6 +21,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { PopupComponent } from './popup/popup.component';
+import { ToggleComponent } from './toggle/toggle.component';
 
 
 
@@ -56,6 +57,7 @@ const routes: Routes = [
     TodolistComponent,
     ProductsComponent,
     PopupComponent,
+    ToggleComponent,
   ],
   imports: [
     BrowserModule,
