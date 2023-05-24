@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
 })
 export class ToggleComponent { 
   showpassword = true
+  toggleshow(){
+    this.showpassword = false
+  }
 
 }
