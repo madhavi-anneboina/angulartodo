@@ -22,6 +22,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { PopupComponent } from './popup/popup.component';
 import { ToggleComponent } from './toggle/toggle.component';
+import { DropdownComponent } from './dropdown/dropdown.component';
 
 
 
@@ -58,6 +59,7 @@ const routes: Routes = [
     ProductsComponent,
     PopupComponent,
     ToggleComponent,
+    DropdownComponent,
   ],
   imports: [
     BrowserModule,
