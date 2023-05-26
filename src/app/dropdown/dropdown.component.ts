@@ -129,6 +129,14 @@ districts = [
     name: "nachalakonda",
     s_id : 4
   },
-
 ]
+filterdDistricts = this.districts
+constructor(){
+
+}
+  updateDistricts (e:any) {
+    let sid = e.target.value
+    console.log(sid)
+
+   }
 }
