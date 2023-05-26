@@ -130,6 +130,5 @@ districts = [
     s_id : 4
   },
 
-
 ]
 }
