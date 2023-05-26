@@ -23,6 +23,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { PopupComponent } from './popup/popup.component';
 import { ToggleComponent } from './toggle/toggle.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
+import { CheckboxComponent } from './checkbox/checkbox.component';
 
 
 
@@ -60,6 +61,7 @@ const routes: Routes = [
     PopupComponent,
     ToggleComponent,
     DropdownComponent,
+    CheckboxComponent,
   ],
   imports: [
     BrowserModule,
