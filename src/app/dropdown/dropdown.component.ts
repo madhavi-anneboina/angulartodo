@@ -136,7 +136,11 @@ constructor(){
 }
   updateDistricts (e:any) {
     let sid = e.target.value
-    console.log(sid)
+    
+    this.filterdDistricts = this.districts.filter(
+      (d) => d['s_id'] == sid 
+      
+    )
 
    }
 }

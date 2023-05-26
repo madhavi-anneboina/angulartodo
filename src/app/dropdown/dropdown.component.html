@@ -1,9 +1,12 @@
-<select (change)="updateDistricts($event)">
-    <option value="-1">Select State</option>
-<option  value="{{s.id}}" *ngFor="let s of states">{{s.name}}</option>
-</select>
 
-<select>
-    <option value="-1">Select districts</option>
-<option  value="{{d.id}}" *ngFor="let d of filterdDistricts">{{d.name}}</option>
-</select>
+<div class="dropdowns">
+    <select (change)="updateDistricts($event)">
+        <option value="-1">Select State</option>
+    <option  value="{{s.id}}" *ngFor="let s of states">{{s.name}}</option>
+    </select>
+    
+    <select>
+        <option value="-1">Select districts</option>
+    <option  value="{{d.id}}" *ngFor="let d of filterdDistricts">{{d.name}}</option>
+    </select>
+</div>
