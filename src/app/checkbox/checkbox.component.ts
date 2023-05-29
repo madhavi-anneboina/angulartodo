@@ -8,10 +8,15 @@ import { FormControl,FormGroup,FormBuilder,FormArray } from '@angular/forms';
 export class CheckboxComponent {
   testForm:any;
   langs = ["c","java","python","javascript","typescript","Angular","React"]
+  handlelangs(e:any){
+    console.log(e)
+
+  }
   constructor(private fb:FormBuilder){
     this.testForm = this.fb.group({
       languages : this.fb.array([])
     })
+   
 
   }
 

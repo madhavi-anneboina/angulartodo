@@ -1,6 +1,6 @@
 <ng-container *ngFor="let l of langs">
     <label for="{{l}}">
-    <input type="checkbox" value="{{l}}" id="{{l}}"/>
+    <input type="checkbox" value="{{l}}" id="{{l}}" (change)="handlelangs($event)"/>
     {{l}}
     </label>
 
