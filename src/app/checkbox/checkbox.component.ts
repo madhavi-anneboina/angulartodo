@@ -23,14 +23,14 @@ export class CheckboxComponent {
       langarr.push(new FormControl(e.target.value))
     } else {
       let i = 0
-      // langarr.controls.forEach(
-      //   (l:any)=>{
-      //     if(l.value == e.target.value){
-      //       langarr.removeAt(i)
-      //       return
-      //     }
-      //   }
-      // )
+      langarr.controls.forEach(
+        (l:any)=>{
+          if(l.value == e.target.value){
+            langarr.removeAt(i)
+            return
+          }
+        }
+      )
     }
     
 
