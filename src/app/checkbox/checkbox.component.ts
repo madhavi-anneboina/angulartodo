@@ -11,9 +11,9 @@ export class CheckboxComponent {
 
 
   constructor(private fb:FormBuilder){
-    this.testForm = this.fb.group({
-      languages : this.fb.array([])
-    })
+    // this.testForm = this.fb.group({
+    //   languages : this.fb.array([])
+    // })
    
 
   }
