@@ -42,6 +42,10 @@ const routes: Routes = [
     component: ProductsComponent,
   },
   {
+    path: 'login',
+    component: LoginComponent,
+  },
+  {
     path: 'about',
     component: AboutComponent,
   },
