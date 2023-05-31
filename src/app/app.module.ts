@@ -25,6 +25,9 @@ import { ToggleComponent } from './toggle/toggle.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { LoadingComponent } from './loading/loading.component';
+import { HeaderComponent } from './header/header.component';
+import { LoginComponent } from './login/login.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 
 
@@ -64,6 +67,9 @@ const routes: Routes = [
     DropdownComponent,
     CheckboxComponent,
     LoadingComponent,
+    HeaderComponent,
+    LoginComponent,
+    ContactusComponent,
   ],
   imports: [
     BrowserModule,
