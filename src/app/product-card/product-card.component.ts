@@ -9,7 +9,10 @@ export class ProductCardComponent {
   @Input() product:any
 
   constructor(){
-    
+
+  }
+  ngOnInit(): void{
+    // console.log(this.product)
   }
 
 }
