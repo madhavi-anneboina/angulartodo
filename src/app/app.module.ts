@@ -28,6 +28,8 @@ import { LoadingComponent } from './loading/loading.component';
 import { HeaderComponent } from './header/header.component';
 import { LoginComponent } from './login/login.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { ProductListComponent } from './product-list/product-list.component';
+import { ProductCardComponent } from './product-card/product-card.component';
 
 
 
@@ -78,6 +80,8 @@ const routes: Routes = [
     HeaderComponent,
     LoginComponent,
     ContactusComponent,
+    ProductListComponent,
+    ProductCardComponent,
   ],
   imports: [
     BrowserModule,
