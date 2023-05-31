@@ -10,7 +10,12 @@ export class ProductListComponent {
 
   constructor(private http:HttpClient){
   }
+  products:any
   ngOnInit() : void{
-    this.http.get("https://fakestoreapi.com/products")
+    this.http.get("https://fakestoreapi.com/products").subscribe(
+      (res) =>{
+       this.products = res
+      }
+    )
   }
 }
