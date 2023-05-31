@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class ProductListComponent {
 
+  constructor(private http:HttpClient){
+  }
+  ngOnInit() : void{
+    this.http.get("https://fakestoreapi.com/products")
+  }
 }
