@@ -12,6 +12,8 @@ export class ProductListComponent {
   }
   products:any
   searhInput = ""
+    
+  
   ngOnInit() : void{
     this.http.get("https://fakestoreapi.com/products").subscribe(
       (res) =>{
@@ -19,4 +21,7 @@ export class ProductListComponent {
       }
     )
   }
+  filterProducts(){
+  }
+
 }

@@ -1,6 +1,6 @@
 <div class="input-group w-25 mt-5">
   <input type="text" class="form-control" [(ngModel)]="searhInput"/>
- <button class="btn btn-primary">Search</button>
+ <button class="btn btn-primary" (click)="filterProducts()">Search</button>
 </div>
 <div class="product-list">
     <ng-container *ngFor="let p of products">
