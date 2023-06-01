@@ -11,6 +11,7 @@ export class ProductListComponent {
   constructor(private http:HttpClient){
   }
   products:any
+  searhInput = ""
   ngOnInit() : void{
     this.http.get("https://fakestoreapi.com/products").subscribe(
       (res) =>{
