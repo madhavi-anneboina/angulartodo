@@ -24,7 +24,7 @@ export class ProductListComponent {
     )
   }
   filterProducts(){
-    this.allProducts.filter(
+    this.filterdProducts = this.allProducts.filter(
       (p:any) => {
         return p.title.includes(this.searhInput)
       }
