@@ -10,18 +10,25 @@ export class ProductListComponent {
 
   constructor(private http:HttpClient){
   }
-  products:any
+  filterdProducts:any
+  allProducts:any
   searhInput = ""
     
   
   ngOnInit() : void{
     this.http.get("https://fakestoreapi.com/products").subscribe(
       (res) =>{
-       this.products = res
+       this.filterdProducts = res
+       this.allProducts = res
       }
     )
   }
   filterProducts(){
+    this.allProducts.filter(
+      (p:any) => {
+        return p.title.includes(this.searhInput)
+      }
+    )
   }
 
 }

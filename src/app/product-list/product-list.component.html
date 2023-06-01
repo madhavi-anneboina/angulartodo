@@ -3,7 +3,7 @@
  <button class="btn btn-primary" (click)="filterProducts()">Search</button>
 </div>
 <div class="product-list">
-    <ng-container *ngFor="let p of products">
+    <ng-container *ngFor="let p of filterdProducts">
       <app-product-card [product]="p"></app-product-card>
     </ng-container>
 </div>
