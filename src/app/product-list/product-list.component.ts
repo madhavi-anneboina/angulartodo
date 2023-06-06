@@ -23,12 +23,12 @@ export class ProductListComponent {
       }
     )
   }
-  // filterProducts(){
-  //   this.filterdProducts = this.allProducts.filter(
-  //     (p:any) => {
-  //       return p.title.includes(this.searhInput)
-  //     }
-  //   )
-  // }
+  filterProducts(){
+    this.filterdProducts = this.allProducts.filter(
+      (p:any) => {
+        return p.title.includes(this.searhInput)
+      }
+    )
+  }
 
 }
