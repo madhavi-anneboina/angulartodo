@@ -10,9 +10,9 @@ export class ProductListComponent {
 
   constructor(private http:HttpClient){
   }
-  filterdProducts:any
-  allProducts:any
-  searhInput = ""
+  // filterdProducts:any
+  // allProducts:any
+  // searhInput = ""
     
   
   ngOnInit() : void{
