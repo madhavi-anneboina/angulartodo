@@ -15,14 +15,14 @@ export class ProductListComponent {
   searhInput = ""
     
   
-  // ngOnInit() : void{
-  //   this.http.get("https://fakestoreapi.com/products").subscribe(
-  //     (res) =>{
-  //      this.filterdProducts = res
-  //      this.allProducts = res
-  //     }
-  //   )
-  // }
+  ngOnInit() : void{
+    this.http.get("https://fakestoreapi.com/products").subscribe(
+      (res) =>{
+       this.filterdProducts = res
+       this.allProducts = res
+      }
+    )
+  }
   filterProducts(){
     this.filterdProducts = this.allProducts.filter(
       (p:any) => {
