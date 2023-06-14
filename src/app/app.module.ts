@@ -100,8 +100,11 @@ const routes: Routes = [
     MatButtonModule,
     MatIconModule,
     MatToolbarModule,
-    MatSidenavModule
+    MatSidenavModule,
 
+  ],
+  exports :[
+    ChatWindowComponent
   ],
   providers: [],
   bootstrap: [AppComponent],
