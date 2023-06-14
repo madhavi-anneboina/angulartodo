@@ -30,6 +30,8 @@ import { LoginComponent } from './login/login.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductCardComponent } from './product-card/product-card.component';
+import { ChatWindowComponent } from './chat-window/chat-window.component';
+import { MessageInputComponent } from './message-input/message-input.component';
 
 
 
@@ -82,6 +84,8 @@ const routes: Routes = [
     ContactusComponent,
     ProductListComponent,
     ProductCardComponent,
+    ChatWindowComponent,
+    MessageInputComponent,
   ],
   imports: [
     BrowserModule,
