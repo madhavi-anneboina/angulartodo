@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class ChatWindowComponent {
   messages: string[] = [];
 
-  receiveMessage(message: string) {
-    this.messages.push(message);
-  }
+  // receiveMessage(message: string) {
+  //   this.messages.push(message);
+  // }
 }
