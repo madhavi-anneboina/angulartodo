@@ -10,8 +10,8 @@ export class MessageInputComponent {
 
   constructor(private chatWindow: ChatWindowComponent) {}
 
-  sendMessage() {
-    this.chatWindow.receiveMessage(this.messageText);
-    this.messageText = '';
-  }
+  // sendMessage() {
+  //   this.chatWindow.receiveMessage(this.messageText);
+  //   this.messageText = '';
+  // }
 }
