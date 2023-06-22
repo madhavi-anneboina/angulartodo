@@ -6,7 +6,7 @@ import { ChatWindowComponent } from '../chat-window/chat-window.component';
   templateUrl: './message-input.component.html',
 })
 export class MessageInputComponent {
-  // messageText: string = '';
+  messageText: string = '';
 
   constructor(private chatWindow: ChatWindowComponent) {}
 
