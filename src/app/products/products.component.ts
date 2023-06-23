@@ -75,6 +75,6 @@ export class ProductsComponent {
     },
   ]
   convertExcel(){
-
+  xls.utils.table_to_book(this.table)
   }
 }
