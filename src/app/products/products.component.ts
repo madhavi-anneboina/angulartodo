@@ -75,6 +75,7 @@ export class ProductsComponent {
     },
   ]
   convertExcel(){
-  xls.utils.table_to_book(this.table)
+  const workbook = xls.utils.table_to_book(this.table.nativeElement)
+  xls.writeFile(workbook,"users.xlsx")
   }
 }
