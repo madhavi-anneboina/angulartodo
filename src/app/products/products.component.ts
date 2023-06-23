@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import * as xls from "xlsx";
 
 @Component({
@@ -7,6 +7,7 @@ import * as xls from "xlsx";
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent {
+  @ViewChild("table")
 
   users = [
     {
