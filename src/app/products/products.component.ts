@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as xls from "xlsx";
 
 @Component({
   selector: 'app-products',
@@ -72,5 +73,7 @@ export class ProductsComponent {
       "State":"Tamilanadu"
     },
   ]
+  convertExcel(){
 
+  }
 }
