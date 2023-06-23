@@ -1,4 +1,18 @@
 <div class="container m-5">
     <h1 class="text-primary text-center"> HTML Table to excel</h1>
+   <table class="table" *ngIf="users.length>0">
+    <thead>
+
+    </thead>
+      <tbody>
+        <tr *ngFor="let u of users">
+          <td>{{u.Id}}</td>
+          <td>{{u.Name}}</td>
+          <td>{{u.Email}}</td>
+          <td>{{u.Mobile}}</td>
+          <td>{{u.State}}</td>
+        </tr>
+      </tbody>
+   </table>
 
 </div>
