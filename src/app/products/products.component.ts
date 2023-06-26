@@ -66,13 +66,13 @@ export class ProductsComponent {
       "Mobile":"3325544646",
       "State":"Uttaranchal"
     },
-    // {
-    //   "Id" : 9,
-    //   "Name": "koniru Anneboina",
-    //   "Email":"koniru.anneboina@gmail.com",
-    //   "Mobile":"3434872313",
-    //   "State":"Tamilanadu"
-    // },
+    {
+      "Id" : 9,
+      "Name": "koniru Anneboina",
+      "Email":"koniru.anneboina@gmail.com",
+      "Mobile":"3434872313",
+      "State":"Tamilanadu"
+    },
   ]
   convertExcel(){
   const workbook = xls.utils.table_to_book(this.table.nativeElement)
