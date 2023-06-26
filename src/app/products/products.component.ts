@@ -74,8 +74,8 @@ export class ProductsComponent {
       "State":"Tamilanadu"
     },
   ]
-  // convertExcel(){
-  // const workbook = xls.utils.table_to_book(this.table.nativeElement)
-  // xls.writeFile(workbook,"users.xlsx")
-  // }
+  convertExcel(){
+  const workbook = xls.utils.table_to_book(this.table.nativeElement)
+  xls.writeFile(workbook,"users.xlsx")
+  }
 }
