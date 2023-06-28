@@ -24,27 +24,27 @@ export class ProductsComponent {
       "Mobile":"578393021392",
       "State":"Andhrapradesh"
     },
-    // {
-    //   "Id" : 3,
-    //   "Name": "Vani Anneboina",
-    //   "Email":"vani.anneboina@gmail.com",
-    //   "Mobile":"2448414344",
-    //   "State":"Andhrapradesh"
-    // },
-    // {
-    //   "Id" : 4,
-    //   "Name": "Rani Anneboina",
-    //   "Email":"rani.anneboina@gmail.com",
-    //   "Mobile":"242144",
-    //   "State":"Telangana"
-    // },
-    // {
-    //   "Id" : 5,
-    //   "Name": "kini Anneboina",
-    //   "Email":"kini.anneboina@gmail.com",
-    //   "Mobile":"442352354",
-    //   "State":"Karnataka"
-    // },
+    {
+      "Id" : 3,
+      "Name": "Vani Anneboina",
+      "Email":"vani.anneboina@gmail.com",
+      "Mobile":"2448414344",
+      "State":"Andhrapradesh"
+    },
+    {
+      "Id" : 4,
+      "Name": "Rani Anneboina",
+      "Email":"rani.anneboina@gmail.com",
+      "Mobile":"242144",
+      "State":"Telangana"
+    },
+    {
+      "Id" : 5,
+      "Name": "kini Anneboina",
+      "Email":"kini.anneboina@gmail.com",
+      "Mobile":"442352354",
+      "State":"Karnataka"
+    },
     {
       "Id" : 6,
       "Name": "jani Anneboina",
