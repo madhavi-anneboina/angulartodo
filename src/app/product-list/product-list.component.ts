@@ -34,14 +34,14 @@ sort(order:any){
   if(order == 'asc'){
     this.filterdProducts.sort(
       (p1:any,p2:any)=>{
-        p1.price > p2.price ? 1 : -1
+      return p1.price > p2.price ? 1 : -1
       }
     )
   }
   else{
     this.filterdProducts.sort(
       (p1:any,p2:any)=>{
-        p1.price > p2.price ? -1 : 1
+       return p1.price > p2.price ? -1 : 1
       }
     )
   }
