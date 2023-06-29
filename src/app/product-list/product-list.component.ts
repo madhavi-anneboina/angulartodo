@@ -38,5 +38,12 @@ sort(order:any){
       }
     )
   }
+  else{
+    this.filterdProducts.sort(
+      (p1:any,p2:any)=>{
+        p1.price > p2.price ? -1 : 1
+      }
+    )
+  }
 }
 }
