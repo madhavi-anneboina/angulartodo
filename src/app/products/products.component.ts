@@ -17,13 +17,13 @@ export class ProductsComponent {
       "Mobile":"945734124721",
       "State":"Andhrapradesh"
     },
-    {
-      "Id" : 2,
-      "Name": "Mad Anneboina",
-      "Email":"madh.anneboina@gmail.com",
-      "Mobile":"578393021392",
-      "State":"Andhrapradesh"
-    },
+    // {
+    //   "Id" : 2,
+    //   "Name": "Mad Anneboina",
+    //   "Email":"madh.anneboina@gmail.com",
+    //   "Mobile":"578393021392",
+    //   "State":"Andhrapradesh"
+    // },
     {
       "Id" : 3,
       "Name": "Vani Anneboina",
