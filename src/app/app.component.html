@@ -18,6 +18,7 @@
 <div class="preview" *ngIf="uploads.length>0">
     <div *ngFor="let url of uploads; let i=index" class="img-box border">
         <img [src]="url" alt="" />
+        <button class="btn" (click)="deleteImage(i)">❌</button>
 
     </div>
 

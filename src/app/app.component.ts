@@ -47,6 +47,9 @@ export class AppComponent  {
       }
     }
    }
+   deleteImage(i:any){
+    this.uploads.splice(i,1)
+   }
  
  ngOnInit(): void {
 
