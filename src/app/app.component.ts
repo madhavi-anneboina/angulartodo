@@ -14,6 +14,7 @@ import { NavigationEnd, Router } from '@angular/router';
 export class AppComponent  {
   @ViewChild('mobile')m:any
   @ViewChild('text')ip:any
+ 
   showHeader:boolean = true
    constructor(private router:Router){
     router.events.subscribe(
@@ -30,6 +31,7 @@ export class AppComponent  {
     )
     
    }
+   uploads = []
    saveImages(e:any){
     console.log(e)
     let totalFiles = e.target.files
@@ -37,6 +39,11 @@ export class AppComponent  {
       for(let i=0; i<totalFiles.length;i++){
         let file = totalFiles[i]
         const reader = new FileReader();
+        reader.readAsDataURL(file)
+        reader.onload = (e:any)=>{
+         let url = e.target.result;
+         this.uploads.push(url)
+        }
       }
     }
    }
