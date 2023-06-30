@@ -31,7 +31,7 @@ export class AppComponent  {
     )
     
    }
-   uploads = []
+   uploads: string[] = [];
    saveImages(e:any){
     console.log(e)
     let totalFiles = e.target.files
@@ -41,7 +41,7 @@ export class AppComponent  {
         const reader = new FileReader();
         reader.readAsDataURL(file)
         reader.onload = (e:any)=>{
-         let url = e.target.result;
+         let url:any = e.target.result;
          this.uploads.push(url)
         }
       }
