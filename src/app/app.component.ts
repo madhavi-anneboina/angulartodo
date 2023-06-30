@@ -45,6 +45,7 @@ export class AppComponent  {
          this.uploads.push(url)
         }
       }
+      e.target.value=""
     }
    }
    deleteImage(i:any){
