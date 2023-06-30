@@ -28,7 +28,10 @@ export class AppComponent  {
       }
 
     )
-
+    
+   }
+   saveImages(e:any){
+    console.log(e)
    }
  
  ngOnInit(): void {

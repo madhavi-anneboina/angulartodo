@@ -4,8 +4,15 @@
 
 <router-outlet></router-outlet> -->
 
-<app-product-list></app-product-list>
+<!-- <app-product-list></app-product-list> -->
 
 <!-- <app-chat-window></app-chat-window>
 <app-message-input></app-message-input> -->
 <!-- <app-products></app-products> -->
+
+<div class="container m-5">
+<h1 class="text-primary text-center">Preview Images</h1>
+<div class="w-50">
+    <input type="file" multiple class="form-control" (change)="saveImages($event)"/>
+</div>
+</div>
