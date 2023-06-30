@@ -32,6 +32,13 @@ export class AppComponent  {
    }
    saveImages(e:any){
     console.log(e)
+    let totalFiles = e.target.files
+    if(totalFiles.length>0){
+      for(let i=0; i<totalFiles.length;i++){
+        let file = totalFiles[i]
+        const reader = new FileReader();
+      }
+    }
    }
  
  ngOnInit(): void {
