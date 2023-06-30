@@ -16,7 +16,7 @@
     <input type="file" multiple class="form-control" (change)="saveImages($event)"/>
 </div>
 <div class="preview" *ngIf="uploads.length>0">
-    <div *ngFor="let url of uploads; let i=index" class="img-box">
+    <div *ngFor="let url of uploads; let i=index" class="img-box border">
         <img [src]="url" alt="" />
 
     </div>
