@@ -6,3 +6,7 @@
 .form-group{
     margin: 10px auto;
 }
+.actions{
+    display:flex;
+    justify-content:space-between;
+}
