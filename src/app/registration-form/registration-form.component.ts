@@ -24,4 +24,7 @@ export class RegistrationFormComponent {
  ngOninit(): void{
 
  }
+ submit(){
+  console.log(this.regForm.value)
+ }
 }
