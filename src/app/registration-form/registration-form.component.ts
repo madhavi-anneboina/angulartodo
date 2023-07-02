@@ -10,7 +10,8 @@ export class RegistrationFormComponent {
   regForm:FormGroup
  constructor(private fb:FormBuilder){
   this.regForm = this.fb.group({
-    firstName:[]
+    firstName:['',[Validators.required]],
+    lastName:['',[Validators.required]]
   }
 
   )
