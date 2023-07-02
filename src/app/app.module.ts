@@ -32,6 +32,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductCardComponent } from './product-card/product-card.component';
 import { ChatWindowComponent } from './chat-window/chat-window.component';
 import { MessageInputComponent } from './message-input/message-input.component';
+import { RegistrationFormComponent } from './registration-form/registration-form.component';
 
 
 
@@ -86,6 +87,7 @@ const routes: Routes = [
     ProductCardComponent,
     ChatWindowComponent,
     MessageInputComponent,
+    RegistrationFormComponent,
   ],
   imports: [
     BrowserModule,
