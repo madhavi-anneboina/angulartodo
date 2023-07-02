@@ -7,5 +7,16 @@ import { FormBuilder,FormGroup,FormArray,Validators } from '@angular/forms';
   styleUrls: ['./registration-form.component.css']
 })
 export class RegistrationFormComponent {
+  regForm:FormGroup
+ constructor(private fb:FormBuilder){
+  this.regForm = this.fb.group({
+    firstName:[]
+  }
 
+  )
+
+ }
+ ngOninit(): void{
+
+ }
 }
