@@ -8,6 +8,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class RegistrationFormComponent implements OnInit {
   regForm: FormGroup;
+  submitted=false;
 
   constructor(private fb: FormBuilder) {
     this.regForm = this.fb.group({
@@ -24,5 +25,6 @@ export class RegistrationFormComponent implements OnInit {
 
   submit() {
     console.log(this.regForm.value);
+    this.submitted = true
   }
 }
