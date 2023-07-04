@@ -27,4 +27,8 @@ export class RegistrationFormComponent implements OnInit {
     console.log(this.regForm.value);
     this.submitted = true
   }
+  reset(){
+    this.submitted = false
+    this.regForm.reset()
+  }
 }
