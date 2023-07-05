@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TodoService } from '../todo.service';
+import { SharedService } from '../shared.service';
 
 
 @Component({
@@ -9,17 +10,18 @@ import { TodoService } from '../todo.service';
 })
 export class TodolistComponent {
   todos:any=[]
-  constructor(private ts:TodoService){}
+  todolist:any
+  constructor(private ts:SharedService){}
 
   ngOninit(): void{
-    console.log("todos")
-    this.ts.todolist.subscribe(
-      (data)=>{
-        this.todos = data
-      }
-    )
-this.ts.sendTodos()
-    
+//     console.log("todos")
+//     this.ts.todolist.subscribe(
+//       (data)=>{
+//         this.todos = data
+//       }
+//     )
+// this.ts.sendTodos()
+    this.todolist = this.ts.getTodos()
   }
 
 }

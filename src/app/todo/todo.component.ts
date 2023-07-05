@@ -13,8 +13,9 @@ export class TodoComponent {
 //   this.ts.addNewTodo(t)
 
 // }
-addNew(task:any){
-  this.ts.addTodo(task)
+addNew(input:any){
+  this.ts.addTodo(input.value)
+  input.value=""
   console.log(this.ts.getTodos())
 
 }
