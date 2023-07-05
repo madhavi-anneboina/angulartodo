@@ -4,7 +4,7 @@
     <button class="btn btn-primary m-3" (click)="addTodo(t.value)">Add</button>
 
 </div> -->
-<div class="input-group container">
-    <input type="text" class="form-control w-25"/>
-    <button class="btn btn-primary">Add</button>
+<div class="input-group container w-25">
+    <input type="text" class="form-control" #input/>
+    <button class="btn btn-primary"(click)="addNew(input.value)">Add</button>
 </div>
