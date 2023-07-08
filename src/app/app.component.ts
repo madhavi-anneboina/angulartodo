@@ -14,6 +14,7 @@ import { NavigationEnd, Router } from '@angular/router';
 export class AppComponent  {
   @ViewChild('mobile')m:any
   @ViewChild('text')ip:any
+  imageUrl: string = 'assets/image.jpeg';
  
   showHeader:boolean = true
    constructor(private router:Router){
