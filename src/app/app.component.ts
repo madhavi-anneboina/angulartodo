@@ -19,15 +19,15 @@ export class AppComponent  {
   showHeader:boolean = true
    constructor(private router:Router){
     router.events.subscribe(
-      (val) => {
-        if(val instanceof NavigationEnd){
-          if(val.url == '/login'){
-            this.showHeader = false 
-          } else{
-            this.showHeader = true 
-          }
-        }
-      }
+      // (val) => {
+      //   if(val instanceof NavigationEnd){
+      //     if(val.url == '/login'){
+      //       this.showHeader = false 
+      //     } else{
+      //       this.showHeader = true 
+      //     }
+      //   }
+      // }
 
     )
     
