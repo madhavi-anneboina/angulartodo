@@ -52,6 +52,11 @@
   text-transform:lowercase;
   color: blue;
  }
+
+ .firstline ::first-line{
+  font-size:250spx;
+  color:blueviolet;
+ }
  /* .h1{
   color:red;
  } */
