@@ -61,7 +61,7 @@
   color:red;
  } */
 
- .attribute p[title |="para"]{
+ .attribute p[title ^="para"]{
   background:red;
   font-size:20px;
  }
