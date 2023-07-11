@@ -65,3 +65,12 @@
   background:red;
   font-size:20px;
  }
+
+ .container p:first-child {
+  color: red;
+}
+
+.btn:hover {
+  background-color: blue;
+  color: white;
+}
