@@ -48,7 +48,10 @@
   text-shadow: 0cqmax;
   background: brown;
  }
- .h1{
-  color:red;
-
+ .p ::first-letter{
+  text-transform:lowercase;
+  color: blue;
  }
+ /* .h1{
+  color:red;
+ } */
