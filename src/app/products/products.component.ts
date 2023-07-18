@@ -10,13 +10,13 @@ export class ProductsComponent {
   @ViewChild("table")table!:ElementRef
 
   users = [
-    // {
-    //   "Id" : 1,
-    //   "Name": "Madhavi Anneboina",
-    //   "Email":"madhavi.anneboina@gmail.com",
-    //   "Mobile":"945734124721",
-    //   "State":"Andhrapradesh"
-    // },
+    {
+      "Id" : 1,
+      "Name": "Madhavi Anneboina",
+      "Email":"madhavi.anneboina@gmail.com",
+      "Mobile":"945734124721",
+      "State":"Andhrapradesh"
+    },
     {
       "Id" : 2,
       "Name": "Mad Anneboina",
