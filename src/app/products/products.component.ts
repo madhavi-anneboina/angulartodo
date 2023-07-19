@@ -17,20 +17,20 @@ export class ProductsComponent {
       "Mobile":"945734124721",
       "State":"Andhrapradesh"
     },
-    {
-      "Id" : 2,
-      "Name": "Mad Anneboina",
-      "Email":"madh.anneboina@gmail.com",
-      "Mobile":"578393021392",
-      "State":"Andhrapradesh"
-    },
-    {
-      "Id" : 3,
-      "Name": "Vani Anneboina",
-      "Email":"vani.anneboina@gmail.com",
-      "Mobile":"2448414344",
-      "State":"Andhrapradesh"
-    },
+    // {
+    //   "Id" : 2,
+    //   "Name": "Mad Anneboina",
+    //   "Email":"madh.anneboina@gmail.com",
+    //   "Mobile":"578393021392",
+    //   "State":"Andhrapradesh"
+    // },
+    // {
+    //   "Id" : 3,
+    //   "Name": "Vani Anneboina",
+    //   "Email":"vani.anneboina@gmail.com",
+    //   "Mobile":"2448414344",
+    //   "State":"Andhrapradesh"
+    // },
     {
       "Id" : 4,
       "Name": "Rani Anneboina",
