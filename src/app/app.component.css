@@ -74,7 +74,7 @@
   background-color: blue;
   color: white;
 }
-.input:focus{
+.input:required{
   color:blanchedalmond;
   background-color:red;
 
