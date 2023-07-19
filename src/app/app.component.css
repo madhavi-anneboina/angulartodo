@@ -74,3 +74,8 @@
   background-color: blue;
   color: white;
 }
+.input:focus{
+  color:blanchedalmond;
+  background-color:red;
+
+}
