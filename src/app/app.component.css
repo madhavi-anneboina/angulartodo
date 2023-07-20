@@ -79,3 +79,18 @@
   background-color:red;
 
 }
+.cb{
+  width:200px;
+  height:200px;
+  background-color:blue;
+  padding:20px;
+  border: 5px solid black;
+}
+.bb{
+  width:200px;
+  height:200px;
+  background-color:black;
+  padding:20px;
+  border: 5px solid black;
+  box-sizing: border-box;
+}
