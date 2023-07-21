@@ -101,21 +101,23 @@
 }
 .d3{
   background-color: aqua;
+ 
 
 }
 .d1{
   height:500px;
   background-color: blueviolet;
+  position:sticky;
+  top:40px
 }
 .d2{
-  height:500px;
+  height:50px;
   background-color: black;
 }
 .first{
   background-color: bisque;
-  position:fixed;
-  height:60px;
-  width:50px;
-  top:40px;
+  height:400px;
+
+ 
 
 }
