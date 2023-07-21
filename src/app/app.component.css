@@ -100,7 +100,22 @@
   background-color:aqua;
 }
 .d3{
-  position:relative;
-  top:20px;
-  left:100px;
+  background-color: aqua;
+
+}
+.d1{
+  height:500px;
+  background-color: blueviolet;
+}
+.d2{
+  height:500px;
+  background-color: black;
+}
+.first{
+  background-color: bisque;
+  position:fixed;
+  height:60px;
+  width:50px;
+  top:40px;
+
 }
