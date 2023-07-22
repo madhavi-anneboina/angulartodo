@@ -16,8 +16,10 @@
 }
 .parent{
  display:flex;
- flex-direction:row-reverse;
+ flex-direction:column;
  height:500px;
  width:700px;
- border:2px solid gray
+ border:2px solid gray;
+ flex-wrap:wrap-reverse
+
 }
