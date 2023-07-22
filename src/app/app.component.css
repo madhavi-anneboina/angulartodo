@@ -21,6 +21,7 @@
  width:700px;
  border:2px solid gray;
  flex-flow:row wrap-reverse;
+ align-items:left;
  /* flex-wrap:wrap-reverse */
 
 }
