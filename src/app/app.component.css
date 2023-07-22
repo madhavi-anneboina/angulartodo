@@ -119,6 +119,19 @@
   height:400px;
 
 }
-.bxm{
-  
+.parent{
+  width:500px;
+  height:500px;
+  background-color:blanchedalmond;
+  padding:10px;
+}
+.c1{
+  width:150px;
+  height:150px;
+  background-color:blue;
+  float:left;
+ 
+}
+.p{
+  clear:left;
 }
