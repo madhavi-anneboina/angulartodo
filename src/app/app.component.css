@@ -21,7 +21,7 @@
  width:700px;
  border:2px solid gray;
  flex-flow:row wrap-reverse;
-justify-content:flex-start;
+ justify-content:space-evenly;
  /* flex-wrap:wrap-reverse */
 
 }
