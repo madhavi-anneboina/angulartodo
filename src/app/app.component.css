@@ -6,22 +6,25 @@
   background-color: brown;
   color:white;
   order:5;
-  flex-grow:1;
+  /* flex-grow:1; */
+  align-self:center;
 }
 #c2{
   background-color: blueviolet;
   color:white;
   order:2;
-  flex-grow:2;
+  /* flex-grow:2; */
+  align-self:flex-end;
 }
 #c3{
   background-color: black;
   color:white;
-  order:1
+  order:1;
+  align-self:flex-start;
 }
 .parent{
  display:flex;
- /* flex-direction:column; */
+ flex-direction:column; 
  height:500px;
  width:700px;
  border:2px solid gray;
