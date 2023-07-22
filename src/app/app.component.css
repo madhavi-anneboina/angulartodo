@@ -14,3 +14,6 @@
   background-color: black;
   color:white
 }
+.parent{
+ display:flex;
+}
