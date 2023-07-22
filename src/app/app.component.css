@@ -4,15 +4,20 @@
 }
 #c1{
   background-color: brown;
-  color:white
+  color:white;
+  order:5;
+  flex-grow:1;
 }
 #c2{
   background-color: blueviolet;
-  color:white
+  color:white;
+  order:2;
+  flex-grow:2;
 }
 #c3{
   background-color: black;
-  color:white
+  color:white;
+  order:1
 }
 .parent{
  display:flex;
