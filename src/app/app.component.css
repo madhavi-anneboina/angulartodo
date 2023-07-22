@@ -1,0 +1,16 @@
+.c{
+  width:100px;
+  height:100px;
+}
+#c1{
+  background-color: brown;
+  color:white
+}
+#c2{
+  background-color: blueviolet;
+  color:white
+}
+#c3{
+  background-color: black;
+  color:white
+}
