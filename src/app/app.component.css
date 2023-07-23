@@ -10,3 +10,15 @@
   height:200px;
   background:linear-gradient(blue,red,orange);
 }
+
+.txt{
+  position:absolute;
+  top:50%;
+  left:50%;
+  font-size:20px;
+  font-weight:bolder;
+  transform:translate(-50%,-50%);
+  background:linear-gradient(blue,red,orange);
+  color:transparent;
+  background-clip:text;
+}
