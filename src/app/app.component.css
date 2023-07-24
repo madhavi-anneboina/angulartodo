@@ -41,7 +41,7 @@
   transform:skewX(25deg);
 }
 .t2:hover{
-  transform:translate(35px,65px);
+  transform:translateX(35px);
 }
 /* .t1:hover, .t2:hover{
   width:300px;
