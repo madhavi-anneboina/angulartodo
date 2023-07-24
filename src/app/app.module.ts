@@ -33,6 +33,7 @@ import { ProductCardComponent } from './product-card/product-card.component';
 import { ChatWindowComponent } from './chat-window/chat-window.component';
 import { MessageInputComponent } from './message-input/message-input.component';
 import { RegistrationFormComponent } from './registration-form/registration-form.component';
+import { WebsiteComponent } from './website/website.component';
 
 
 
@@ -88,6 +89,7 @@ const routes: Routes = [
     ChatWindowComponent,
     MessageInputComponent,
     RegistrationFormComponent,
+    WebsiteComponent,
   ],
   imports: [
     BrowserModule,
