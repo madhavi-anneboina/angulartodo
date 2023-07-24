@@ -22,4 +22,22 @@
   color:transparent;
   background-clip:text;
 }
-
+.t1{
+  margin-top:10px;
+  margin-left:20px;
+  width:200px;
+  height:200px;
+  background: yellowgreen;
+}
+.t2{
+  margin-top:20px;
+  margin-left:20px;
+  width:200px;
+  height:200px;
+  background: red;
+  transition:width 4s;
+}
+.t1:hover, .t2:hover{
+  width:300px;
+  height:300px;
+}
