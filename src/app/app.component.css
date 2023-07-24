@@ -38,7 +38,7 @@
   transition:3s;
 }
 .t1:hover{
-  transform:rotateX(45deg);
+  transform:rotate(45deg);
 }
 .t2:hover{
   transform:translateY(50px);
