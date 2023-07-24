@@ -38,7 +38,7 @@
   transition:3s;
 }
 .t1:hover{
-  transform:skewX(25deg);
+  transform:scale(3);
 }
 .t2:hover{
   transform:translateY(50px);
