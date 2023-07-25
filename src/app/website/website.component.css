@@ -105,3 +105,16 @@ span{
     text-decoration:none;
     font-family: Tahoma,Verdana,sans-serif;
 }
+.footer .box-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap: 15px;
+}
+.footer .box-container .box{
+    flex: 1 1 250px
+}
+.footer .box-container .box h3{
+    color:#333;
+    font-size:25px;
+    padding:10px 0;
+}
