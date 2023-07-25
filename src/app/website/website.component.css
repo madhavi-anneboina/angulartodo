@@ -98,3 +98,10 @@ span{
    z-index:-1;
    transition:0.5s;
 }
+.footer{
+    padding:20px 9%;
+    text-transform:capitalize;
+    transition:0.2s linear;
+    text-decoration:none;
+    font-family: Tahoma,Verdana,sans-serif;
+}
