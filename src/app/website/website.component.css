@@ -67,3 +67,16 @@ font-family:sans-serif;
     margin:20px auto;
     line-height:25px;
 }
+.content button{
+    width:200px;
+    padding:15px 0;
+    text-align:center;
+    margin:20px 10px;
+    border-radius:25px;
+    border:2px solid palevioletred;
+    background:transparent;
+    color:wheat;
+    cursor:pointer;
+    position:relative;
+    overflow:hidden;
+}
