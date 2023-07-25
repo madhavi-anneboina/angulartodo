@@ -67,7 +67,7 @@ font-family:sans-serif;
     margin:20px auto;
     line-height:25px;
 }
-.content button{
+button{
     width:200px;
     padding:15px 0;
     text-align:center;
@@ -79,4 +79,22 @@ font-family:sans-serif;
     cursor:pointer;
     position:relative;
     overflow:hidden;
+}
+
+ button:hover span{
+    width:100%
+}
+button:hover{
+    border:none
+}
+span{
+   position:absolute;
+   left:0;
+   top:0;
+   background-color:papayawhip;
+   width:0;
+   height:100%;
+   border-radius:25px;
+   z-index:-1;
+   transition:0.5s;
 }
