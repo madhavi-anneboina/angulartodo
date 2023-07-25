@@ -1,11 +1,10 @@
 *{
-margin:0;
-padding:0;
+ 
 box-sizing:border-box;
 font-family:sans-serif;
 }
 
-*.container{
+.container{
     width:100%;
     height:100vh;
     background:linear-gradient(red,blue,yellow,orange,pink);
@@ -21,4 +20,15 @@ font-family:sans-serif;
     align-items:center;
     justify-content:space-between;
     position:relative;
+}
+
+.navbar ul li{
+    list-style:none;
+    display:inline-block;
+    margin:0px 20px;
+    position:relative
+}
+.navbar ul li a{
+    text-decoration:none;
+    color:white
 }
