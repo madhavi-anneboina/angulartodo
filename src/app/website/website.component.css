@@ -118,3 +118,22 @@ span{
     font-size:25px;
     padding:10px 0;
 }
+.footer .box-container .box a{
+    display:block;
+    color:#666;
+    font-size:15px;
+    padding:10px 0;
+}
+.footer .box-container .box a:hover{
+    text-decoration:underline;
+    color:rebeccapurple
+}
+.footer .credit{
+    text-align:center;
+    padding-left:30%;
+    padding-top:30px;
+    margin-top:15px;
+    font-size:20px;
+    color:#333;
+    border-top:1ps solid rgba(0,0,0,0.1)
+}
