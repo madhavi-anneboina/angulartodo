@@ -52,7 +52,7 @@
  
 } */
 
-/* *{
+*{
   margin:0px;
   padding:0px;
   box-sizing:border-box;
@@ -63,7 +63,7 @@ body {
   align-items:center;
   justify-content:center;
   height:100vh
-} */
+}
 .container{
   background:linear-gradient(to right, red,blue,green);
   width:10%;
