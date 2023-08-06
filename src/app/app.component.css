@@ -65,7 +65,7 @@ body {
   height:100vh
 }
 .container{
-  background:linear-gradient(to right, red,blue,green);
+  /* background:linear-gradient(to right, red,blue,green);
   width:10%;
   /* height:100vh; */
   display:flex;
@@ -73,4 +73,4 @@ body {
   align-items:center;
   justify-content:center;
   border-radius:10px;
-}
+} */
