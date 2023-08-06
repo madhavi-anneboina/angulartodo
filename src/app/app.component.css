@@ -29,25 +29,26 @@
  
 } */
 
-*{
-  margin:0px;
-  padding:0px;
-  box-sizing:border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  height:100vh
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
-.container{
-   background:linear-gradient(to right, red,blue,green);
-   width:10%;
-   height:100vh;
-  display:flex;
-  padding:10px 0;
-  align-items:center;
-  justify-content:center;
-  border-radius:10px;
-} 
+
+.container {
+  background: linear-gradient(to right, rgb(194, 129, 129), rgb(91, 91, 194), rgb(90, 207, 90));
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  padding: 60px 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
