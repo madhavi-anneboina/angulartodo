@@ -1,27 +1,4 @@
-/* .one{
-  width:200px;
-  height:200px;
-  font-size:10px;
-  background:radial-gradient(red,yellow,black);
-}
-.two{
-  margin-top:100px;
-  width:200px;
-  height:200px;
-  background:linear-gradient(blue,red,orange);
-}
-
-.txt{
-  position:absolute;
-  top:50%;
-  left:50%;
-  font-size:20px;
-  font-weight:bolder;
-  transform:translate(-50%,-50%);
-  background:linear-gradient(blue,red,orange);
-  color:transparent;
-  background-clip:text;
-}
+/* 
 .t1{
   margin-top:10px;
   margin-left:20px;
@@ -45,7 +22,7 @@
 }
 .h{
   font-family:'Akaya Telivigala', "cursive"
-} */
+}  */
 /* .t1:hover, .t2:hover{
   width:300px;
   height:300px;
