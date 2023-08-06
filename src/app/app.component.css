@@ -66,7 +66,7 @@ body {
 }
 .container{
    background:linear-gradient(to right, red,blue,green);
-  width:10%;
+   width:10%;
    height:100vh;
   display:flex;
   padding:10px 0;
