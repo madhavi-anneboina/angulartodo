@@ -72,8 +72,17 @@ body {
   box-shadow:0 0 20px #7c7575;
 }
 
-.buttons button{
+.buttons{
   display:flex;
   justify-content:space-around;
   margin-top:60px;
+}
+
+.buttons button{
+  padding:10px 25px;
+  border:none;
+  background:white;
+  font-size:15px;
+  border-radius:5px;
+  cursor:pointer
 }
