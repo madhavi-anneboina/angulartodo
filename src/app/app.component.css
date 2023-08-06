@@ -45,18 +45,22 @@ body {
 .container {
   background: linear-gradient(to right, rgb(194, 129, 129), rgb(91, 91, 194), rgb(90, 207, 90));
   width: 40%;
-  /* height: 100vh;
-  display: flex; */
-  padding: 60px 0;
-  /* align-items: center;
-  justify-content: center; */
+  justify-content: center;
   border-radius: 10px;
+  padding: 60px 0;
 }
+  /* /* height: 100vh;
+  display: flex; */
+
+  /* align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+} */
 .timeshow{
   background:#7c7575;
   width:90%;
   padding:30px 0px;
-  font-size:20px;
+  /* font-size:20px; */
   text-align:center;
   left:50%;
   position:relative;
@@ -66,4 +70,10 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border-radius:5px;
   box-shadow:0 0 20px #7c7575;
+}
+
+.buttons button{
+  display:flex;
+  justify-content:space-around;
+  margin-top:60px;
 }
