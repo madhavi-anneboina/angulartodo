@@ -13,11 +13,11 @@ import { NavigationEnd, Router } from '@angular/router';
 })
 
 export class AppComponent  {
- x:any= 1
+city :string = "Hyderabad"
 
-name () {
-  return this.x,"xyz"
-}
+// name () {
+//   return this.x,"xyz"
+// }
     
    }
    
