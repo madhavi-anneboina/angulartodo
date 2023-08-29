@@ -13,9 +13,11 @@ import { NavigationEnd, Router } from '@angular/router';
 })
 
 export class AppComponent  {
-title:any = 'madhavi'
+ x:any= 1
 
-
+name () {
+  return this.x,"xyz"
+}
     
    }
    
