@@ -13,7 +13,7 @@ import { NavigationEnd, Router } from '@angular/router';
 })
 
 export class AppComponent  {
-city :string = "Hyderabad"
+path :string = "../assets/bg.jpg"
 
 // name () {
 //   return this.x,"xyz"
