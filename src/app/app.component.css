@@ -86,3 +86,11 @@ body {
   border-radius:5px;
   cursor:pointer
 }
+.active{
+  background-color: aquamarine;
+  color:white
+}
+.inactive{
+  background-color: blue;
+  color:white
+}
