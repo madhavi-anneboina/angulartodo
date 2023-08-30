@@ -13,14 +13,11 @@ import { NavigationEnd, Router } from '@angular/router';
 })
 
 export class AppComponent {
-  isdisable: boolean = false
-  mystyle:object = {
-    color:'red',
-    background:'yellow',
-    border:'5px solid blue'
+ counter:number = 0
 
-
-  }
+ increment(){
+  this.counter++
+ }
 
 }
 
