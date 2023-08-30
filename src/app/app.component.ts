@@ -1,7 +1,7 @@
-import { Component,AfterViewInit,AfterViewChecked,OnInit, ViewChild} from '@angular/core';
+import { Component, AfterViewInit, AfterViewChecked, OnInit, ViewChild } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
-import { FormControl,FormGroup, Validators,FormArray,FormBuilder} from '@angular/forms';
-import { Observable, of,from,range,interval,map,filter,fromEvent,debounceTime,merge,take,pluck,skip} from 'rxjs';
+import { FormControl, FormGroup, Validators, FormArray, FormBuilder } from '@angular/forms';
+import { Observable, of, from, range, interval, map, filter, fromEvent, debounceTime, merge, take, pluck, skip } from 'rxjs';
 import { TodoService } from './todo.service';
 import { NavigationEnd, Router } from '@angular/router';
 
@@ -12,15 +12,10 @@ import { NavigationEnd, Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent  {
-isdisable:boolean = false
-    
-   }
-   
-     
-  
- 
-  
+export class AppComponent {
+  isdisable: boolean = false
+
+}
 
 
 
@@ -29,5 +24,10 @@ isdisable:boolean = false
 
 
 
-  
+
+
+
+
+
+
 
