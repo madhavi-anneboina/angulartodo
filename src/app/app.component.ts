@@ -15,17 +15,8 @@ import { NavigationEnd, Router } from '@angular/router';
 export class AppComponent {
  counter:number = 0
  name:string="ktff"
+city : any = "Hyderabad"
 
- increment(){
-  this.counter++
- }
- Drecement(){
-  this.counter--
- }
- changename(e:any){
-  this.name = e.target.value
-
- }
 
 }
 
