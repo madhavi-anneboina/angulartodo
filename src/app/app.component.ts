@@ -14,6 +14,13 @@ import { NavigationEnd, Router } from '@angular/router';
 
 export class AppComponent {
   isdisable: boolean = false
+  mystyle:object = {
+    color:'red',
+    background:'yellow',
+    border:'5px solid blue'
+
+
+  }
 
 }
 
