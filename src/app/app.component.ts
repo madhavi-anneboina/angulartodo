@@ -13,8 +13,8 @@ import { NavigationEnd, Router } from '@angular/router';
 })
 
 export class AppComponent  {
-// path :string = "../assets/bg.jpg"
-path :string = "addb add"
+path :string = "../assets/bg.jpg"
+
 
 // name () {
 //   return this.x,"xyz"

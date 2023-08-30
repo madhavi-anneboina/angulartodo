@@ -86,11 +86,3 @@ body {
   border-radius:5px;
   cursor:pointer
 }
-.addb{
-  border-color: yellow;
-  border-radius:12px;
-}
-.add{
-  background-color:blue;
-  color:red
-}
