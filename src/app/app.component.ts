@@ -13,7 +13,9 @@ import { NavigationEnd, Router } from '@angular/router';
 })
 
 export class AppComponent  {
-path :string = "../assets/bg.jpg"
+// path :string = "../assets/bg.jpg"
+
+d: Date = new Date()
 
 
 // name () {
