@@ -14,12 +14,17 @@ import { NavigationEnd, Router } from '@angular/router';
 
 export class AppComponent {
  counter:number = 0
+ name:string="ktff"
 
  increment(){
   this.counter++
  }
  Drecement(){
   this.counter--
+ }
+ changename(e:any){
+  this.name = e.target.value
+
  }
 
 }
