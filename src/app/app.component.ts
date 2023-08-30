@@ -15,7 +15,7 @@ import { NavigationEnd, Router } from '@angular/router';
 export class AppComponent  {
 // path :string = "../assets/bg.jpg"
 
-d: Date = new Date()
+d:any = new Date().toLocaleDateString()
 
 
 // name () {
