@@ -18,6 +18,9 @@ export class AppComponent {
  increment(){
   this.counter++
  }
+ Drecement(){
+  this.counter--
+ }
 
 }
 
