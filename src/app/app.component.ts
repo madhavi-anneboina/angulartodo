@@ -13,7 +13,7 @@ import { NavigationEnd, Router } from '@angular/router';
 })
 
 export class AppComponent {
-num1 :any = 6;
+num1 :any = 6890.9080;
 num2 :any = 8
 salary:any =90000
 name :string ="madhavi"
