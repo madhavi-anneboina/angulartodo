@@ -16,7 +16,7 @@ export class AppComponent {
  counter:number = 0
  name:string="ktff"
 city : any = "Hyderabad"
-
+show :any = "mafh"
 updatecity(){
   this.city = "Bangolore"
 }
