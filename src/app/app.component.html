@@ -17,3 +17,10 @@ city : <input type="text" [(ngModel)] ="city"/>
 
 <button (click)="updatecity()">Update</button> -->
 
+<div [ngSwitch] = "op">
+   <div *ngSwitchCase = "'+'">{{num1+num2}}</div>
+   <div *ngSwitchCase = "'-'">{{num1-num2}}</div>
+   <div *ngSwitchCase = "'*'">{{num1*num2}}</div>
+   <div *ngSwitchCase = "'/'">{{num1/num2}}</div>
+   <div *ngSwitchDefault = "'+'">{{num1+ num2}}</div>
+</div>
