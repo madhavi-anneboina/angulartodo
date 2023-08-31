@@ -16,11 +16,11 @@ city : <input type="text" [(ngModel)] ="city"/>
 <h4>City Name : {{city}}</h4>
 
 <button (click)="updatecity()">Update</button> -->
-<input type="text"  [(ngModel)]="op" />
-<div [ngSwitch] = "op">
-   <div *ngSwitchCase = "'+'">{{num1+num2}}</div>
-   <div *ngSwitchCase = "'-'">{{num1-num2}}</div>
-   <div *ngSwitchCase = "'*'">{{num1*num2}}</div>
-   <div *ngSwitchCase = "'/'">{{num1/num2}}</div>
-   <div *ngSwitchDefault = "'+'">{{num1+ num2}}</div>
-</div>
+<h1>{{name | uppercase}}</h1>
+<h1>{{name | titlecase}}</h1>
+<h1>{{name | lowercase}}</h1>
+<h1>{{salary | currency}}</h1>
+<h1>{{salary | currency : 'INR' :'code'}}</h1>
+<h1>{{salary | currency : 'INR' :'symbol'}}</h1>
+<h4>{{person1 | json}}</h4>
+<h5>{{dob | date}}</h5>
