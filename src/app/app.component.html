@@ -18,8 +18,21 @@ city : <input type="text" [(ngModel)] ="city"/>
 <button (click)="updatecity()">Update</button> -->
 
 <table>
-    <tr *ngFor="let n of nums; index as i">
-         <td>data {{n}} {{i+1}}</td>
+    <tr>
+        <td>content</td>
+        <td>index</td>
+        <td>even</td>
+        <td>odd</td>
+        <td>First</td>
+        <td>last</td>
+    </tr>
+    <tr *ngFor="let n of nums; index as i;even as e;odd as o; first as f;last as l">
+        <td>{{n}}</td>
+        <td>{{i}}</td>
+        <td>{{e}}</td>
+        <td>{{o}}</td>
+        <td>{{f}}</td>
+        <td>{{l}}</td>
 
     </tr>
 </table>
