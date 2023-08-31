@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CustomdDirective } from './customd.directive';
 import { RngifDirective } from './rngif.directive';
-import { TestModule } from './test/test.module';
+// import { TestModule } from './test/test.module';
 import { LazyModule } from './lazy/lazy.module';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
@@ -34,6 +34,7 @@ import { ChatWindowComponent } from './chat-window/chat-window.component';
 import { MessageInputComponent } from './message-input/message-input.component';
 import { RegistrationFormComponent } from './registration-form/registration-form.component';
 import { WebsiteComponent } from './website/website.component';
+
 
 
 
@@ -90,6 +91,8 @@ const routes: Routes = [
     MessageInputComponent,
     RegistrationFormComponent,
     WebsiteComponent,
+  
+   
   ],
   imports: [
     BrowserModule,
@@ -97,7 +100,7 @@ const routes: Routes = [
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    TestModule,
+    // TestModule,
     LazyModule,
     RouterModule.forRoot(routes),
     BrowserAnimationsModule,

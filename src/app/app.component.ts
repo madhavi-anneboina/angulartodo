@@ -13,17 +13,9 @@ import { NavigationEnd, Router } from '@angular/router';
 })
 
 export class AppComponent {
-num1 :any = 6890.9080;
-num2 :any = 8
-salary:any =90000
-name :string ="madhavi"
-dob = new Date()
-person1 ={
-  name:"xyz",
-  age:"90",
-  phonenumber:"4848472947219",
-  salary:"680000"
-}
+
+wish:any = "Hello good moring how are you doing today"
+
 
 }
 
