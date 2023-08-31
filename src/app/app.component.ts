@@ -13,14 +13,7 @@ import { NavigationEnd, Router } from '@angular/router';
 })
 
 export class AppComponent {
- counter:number = 0
- name:string="ktff"
-city : any = "Hyderabad"
-show :any = "mafh"
-names = ["mad","rad","cad"]
-updatecity(){
-  this.city = "Bangolore"
-}
+nums:any = [1,2,3,4,5,6,7,8,9,10] 
 
 
 }

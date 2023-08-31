@@ -17,6 +17,4 @@ city : <input type="text" [(ngModel)] ="city"/>
 
 <button (click)="updatecity()">Update</button> -->
 
- <h1 *ngIf = "!names" else name> Loading </h1>
-
- <h2 #name>{{names}}</h2>
+ <h1 *ngFor = "let n of nums"> Loading  {{n}}</h1>
