@@ -17,6 +17,7 @@ export class AppComponent {
  name:string="ktff"
 city : any = "Hyderabad"
 show :any = "mafh"
+names = ["mad","rad","cad"]
 updatecity(){
   this.city = "Bangolore"
 }
