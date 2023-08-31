@@ -17,4 +17,9 @@ city : <input type="text" [(ngModel)] ="city"/>
 
 <button (click)="updatecity()">Update</button> -->
 
- <h1 *ngFor = "let n of nums; index as i"> Loading  {{n}} {{i}}</h1>
+<table>
+    <tr *ngFor="let n of nums; index as i">
+         <td>data {{n}} {{i+1}}</td>
+
+    </tr>
+</table>
