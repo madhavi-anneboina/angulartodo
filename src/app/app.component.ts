@@ -14,11 +14,11 @@ import { NavigationEnd, Router } from '@angular/router';
 })
 
 export class AppComponent {
-@ViewChild(ChildComponent) chill:any
+@ViewChild("mad") m:any
  cdata:any=''
+
 test(){
-  // this.chill.passtoParent()
-  this.cdata = this.chill.passtoParent()
+  this.m.nativeElement.style.color="blue"
 }
 
 
