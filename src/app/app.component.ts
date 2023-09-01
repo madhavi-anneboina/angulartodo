@@ -18,6 +18,8 @@ wish:any = "Hello good moring how are you doing today"
 
 title:string ="Hello this is going to child component"
 
+names:any=["ramya","jaj","kaj","maj","booj","ajj"]
+
 }
 
 

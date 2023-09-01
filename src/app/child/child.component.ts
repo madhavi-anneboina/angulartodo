@@ -7,4 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class ChildComponent {
 @Input() gotoc:any
+@Input() d:any
 }
