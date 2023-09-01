@@ -6,8 +6,9 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./child.component.css']
 })
 export class ChildComponent {
-  message = "hello how are you doing"
-
-  name = "lax"
+ data = "demo of view child"
+  passtoParent(){
+    return this.data;
+  }
 
 }

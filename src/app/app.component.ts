@@ -13,7 +13,7 @@ import { NavigationEnd, Router } from '@angular/router';
 })
 
 export class AppComponent {
-s:any;
+
 
 
 }
