@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-child',
@@ -6,6 +6,11 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./child.component.css']
 })
 export class ChildComponent {
-@Input() gotoc:any
-@Input() d:any
+  message = "hello how are you doing"
+@Output() emitted = new EventEmitter
+
+passtoparent(){
+  this.emitted.emit(this.message)
+}
+
 }
