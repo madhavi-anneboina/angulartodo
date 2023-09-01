@@ -34,6 +34,7 @@ import { ChatWindowComponent } from './chat-window/chat-window.component';
 import { MessageInputComponent } from './message-input/message-input.component';
 import { RegistrationFormComponent } from './registration-form/registration-form.component';
 import { WebsiteComponent } from './website/website.component';
+import { ChildComponent } from './child/child.component';
 
 
 
@@ -91,6 +92,7 @@ const routes: Routes = [
     MessageInputComponent,
     RegistrationFormComponent,
     WebsiteComponent,
+    ChildComponent,
   
    
   ],

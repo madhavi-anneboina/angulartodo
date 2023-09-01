@@ -15,11 +15,8 @@ import { NavigationEnd, Router } from '@angular/router';
 export class AppComponent {
 
 wish:any = "Hello good moring how are you doing today"
-email=""
-updateEmail(data:any){
-  this.email = data.value
 
-}
+title:string ="Hello this is going to child component"
 
 }
 
