@@ -7,10 +7,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class ChildComponent {
   message = "hello how are you doing"
-@Output() emitted = new EventEmitter
 
-passtoparent(){
-  this.emitted.emit(this.message)
-}
+  name = "lax"
 
 }

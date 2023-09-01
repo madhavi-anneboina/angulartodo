@@ -17,6 +17,7 @@ city : <input type="text" [(ngModel)] ="city"/>
 
 <button (click)="updatecity()">Update</button> -->
 
-<app-child (emitted)="s=$event"></app-child>
-{{s}}
+{{data.message}}
+{{data.name}}
+<app-child #data></app-child>
 
