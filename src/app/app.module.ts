@@ -35,7 +35,7 @@ import { MessageInputComponent } from './message-input/message-input.component';
 import { RegistrationFormComponent } from './registration-form/registration-form.component';
 import { WebsiteComponent } from './website/website.component';
 import { ChildComponent } from './child/child.component';
-
+import { TestService } from './test.service';
 
 
 
@@ -93,6 +93,7 @@ const routes: Routes = [
     RegistrationFormComponent,
     WebsiteComponent,
     ChildComponent,
+    
   
    
   ],
@@ -110,12 +111,13 @@ const routes: Routes = [
     MatIconModule,
     MatToolbarModule,
     MatSidenavModule,
+    
 
   ],
   exports :[
     ChatWindowComponent
   ],
-  providers: [],
+  providers: [TestService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
