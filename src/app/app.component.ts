@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, AfterViewChecked, OnInit, ViewChild } from '@angular/core';
+import { Component, AfterViewInit, AfterViewChecked, OnInit, ViewChild, ViewChildren } from '@angular/core';
 import { ChildComponent } from './child/child.component';
 import { HttpClient } from '@angular/common/http'
 import { FormControl, FormGroup, Validators, FormArray, FormBuilder } from '@angular/forms';
@@ -16,9 +16,14 @@ import { NavigationEnd, Router } from '@angular/router';
 export class AppComponent {
 @ViewChild("para") p:any
 
+@ViewChildren("heading") h:any
+
 test(){
-  console.log(this.p.nativeElement.innerText)
+  console.log(this.p)
+  console.log(this.h)
 }
+
+
 
 
 
