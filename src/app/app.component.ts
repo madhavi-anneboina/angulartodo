@@ -17,8 +17,12 @@ export class AppComponent {
 @ViewChild("mad") m:any
  cdata:any=''
 
-test(){
-  this.m.nativeElement.style.color="blue"
+ngAfterViewInit(){
+  console.log(this.m.nativeElement)
+  this.m.nativeElement.onkeyup = () =>{
+    console.log(this.m.nativeElement.value)
+  }
+
 }
 
 
