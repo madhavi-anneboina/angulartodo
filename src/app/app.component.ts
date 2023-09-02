@@ -14,16 +14,12 @@ import { NavigationEnd, Router } from '@angular/router';
 })
 
 export class AppComponent {
-@ViewChild("mad") m:any
- cdata:any=''
+@ViewChild("para") p:any
 
-ngAfterViewInit(){
-  console.log(this.m.nativeElement)
-  this.m.nativeElement.onkeyup = () =>{
-    console.log(this.m.nativeElement.value)
-  }
-
+test(){
+  console.log(this.p.nativeElement.innerText)
 }
+
 
 
 }
