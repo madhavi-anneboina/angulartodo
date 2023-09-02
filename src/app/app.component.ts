@@ -20,7 +20,9 @@ export class AppComponent {
 
 test(){
   console.log(this.p)
-  console.log(this.h)
+  for(let ele of this.h){
+    console.log(ele.nativeElement.innerText)
+  }
 }
 
 
