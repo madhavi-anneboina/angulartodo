@@ -1,0 +1,20 @@
+ul li{
+    list-style:none;
+}
+
+ul li a{
+    text-decoration:none;
+}
+ul{
+    display: flex;
+    justify-content:flex-start;
+    background-color: rgb(138,128,128);
+    height:50px;
+  
+}
+
+a{
+    line-height:50px;
+    color:white;
+    margin:0 20px;
+}

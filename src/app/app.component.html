@@ -16,15 +16,14 @@ city : <input type="text" [(ngModel)] ="city"/>
 <h4>City Name : {{city}}</h4>
 
 <button (click)="updatecity()">Update</button> -->
-
-<p #para>This is paragraph1</p>
-
-<p #para>This is paragraph 2</p>
-
-<button (click)="test()">click</button>
-
-<h1 #heading>this is Heading 1</h1>
-<h2 #heading>This is heading 2</h2>
+<app-header></app-header>
+<router-outlet>
+</router-outlet>
+<!-- <app-home></app-home>
+<app-products></app-products>
+<app-login></app-login>
+<app-about></app-about>
+<app-contact></app-contact> -->
 
 
 
