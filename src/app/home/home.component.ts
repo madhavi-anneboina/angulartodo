@@ -18,7 +18,10 @@ export class HomeComponent implements OnInit,DoCheck,OnChanges,AfterContentCheck
   //   "Samsung"
   // ]
 constructor(public ts:TestService){}
-
+ 
+updatemobile(){
+  this.ts.mobiles.push("ramaravi")
+}
 
 ngDoCheck(): void {
   
