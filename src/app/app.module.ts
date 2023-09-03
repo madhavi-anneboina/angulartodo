@@ -54,13 +54,14 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path: 'users',
-    component: UsersComponent,
+    path: 'products',
+    component: ProductsComponent,
   },
-  {
-    path: 'usercard/:id',
-    component: UsercardComponent
-  },
+  
+  // {
+  //   path: 'usercard/:id',
+  //   component: UsercardComponent
+  // },
   // {
   //   path: 'login',
   //   component: LoginComponent,
