@@ -11,6 +11,8 @@ import { Router } from '@angular/router';
 export class HeaderComponent {
     constructor(private r:Router){}
     navigate(){
-     this.r.navigate(['/home'])
+     this.r.navigate(['/home'],{
+      queryParams:{"page":7,"size":20}
+     })
     }
 }

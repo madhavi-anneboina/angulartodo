@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class ProductService {
 
-  constructor() { }
+  constructor() { 
 
 
   products: [
@@ -47,6 +47,7 @@ export class ProductService {
       "price": 24.99
     }
   ]
+}
 }
 
 
