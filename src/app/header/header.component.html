@@ -22,7 +22,10 @@
 
   <ul>
     <li>
-      <a routerLink="/users" routerLinkActive="active">Users</a>
+      <a routerLink="/products">All Products</a>
+    </li>
+    <li>
+      <a routerLink="/products" routerLinkActive="active" [queryParams]="{'category':'men'}">All Products</a>
     </li>
     <!-- <li>
       <a routerLink="/"Home</a>
