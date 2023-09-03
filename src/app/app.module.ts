@@ -37,6 +37,7 @@ import { WebsiteComponent } from './website/website.component';
 import { ChildComponent } from './child/child.component';
 import { TestService } from './test.service';
 import { UsersComponent } from './users/users.component';
+import { UsercardComponent } from './usercard/usercard.component';
 
 
 
@@ -52,6 +53,10 @@ const routes: Routes = [
   },
   {
     path: 'users',
+    component: UsersComponent,
+  },
+  {
+    path: 'usercard/:id',
     component: UsersComponent,
   },
   // {
@@ -95,6 +100,7 @@ const routes: Routes = [
     WebsiteComponent,
     ChildComponent,
     UsersComponent,
+    UsercardComponent,
     
   
    
