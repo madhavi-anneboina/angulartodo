@@ -36,6 +36,7 @@ import { RegistrationFormComponent } from './registration-form/registration-form
 import { WebsiteComponent } from './website/website.component';
 import { ChildComponent } from './child/child.component';
 import { TestService } from './test.service';
+import { UsersComponent } from './users/users.component';
 
 
 
@@ -50,21 +51,21 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path: 'products',
-    component: ProductsComponent,
+    path: 'users',
+    component: UsersComponent,
   },
-  {
-    path: 'login',
-    component: LoginComponent,
-  },
-  {
-    path: 'about',
-    component: AboutComponent,
-  },
-  {
-    path: 'contact',
-    component: ContactComponent,
-  },
+  // {
+  //   path: 'login',
+  //   component: LoginComponent,
+  // },
+  // {
+  //   path: 'about',
+  //   component: AboutComponent,
+  // },
+  // {
+  //   path: 'contact',
+  //   component: ContactComponent,
+  // },
 ];
 
 @NgModule({
@@ -93,6 +94,7 @@ const routes: Routes = [
     RegistrationFormComponent,
     WebsiteComponent,
     ChildComponent,
+    UsersComponent,
     
   
    
