@@ -1,9 +1,9 @@
 <p>users works!</p>
-<!-- 
-<div *ngFor="let u of users" class="card">
-    <span>{{u.name}}</span>
-    <span>
-        <a [routerLink]="['/usercard','u.id']" routerLinkActive="active">Users</a>
-    </span>
 
-</div> -->
+<div *ngFor="let u of users" class="card">
+    <span>{{ u.firstName }}</span>
+    <span>
+        <!-- Remove the single quotes around u.id -->
+        <a [routerLink]="['/usercard', u.id]" routerLinkActive="active">Madhavi</a>
+    </span>
+</div>

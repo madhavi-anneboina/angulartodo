@@ -38,6 +38,8 @@ import { ChildComponent } from './child/child.component';
 import { TestService } from './test.service';
 import { UsersComponent } from './users/users.component';
 import { UsercardComponent } from './usercard/usercard.component';
+import { UserService } from './user.service';
+
 
 
 
@@ -57,7 +59,7 @@ const routes: Routes = [
   },
   {
     path: 'usercard/:id',
-    component: UsersComponent,
+    component: UsercardComponent
   },
   // {
   //   path: 'login',
@@ -113,19 +115,21 @@ const routes: Routes = [
     HttpClientModule,
     // TestModule,
     LazyModule,
-    RouterModule.forRoot(routes),
+     RouterModule.forRoot(routes),
+    // RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
     MatToolbarModule,
     MatSidenavModule,
+    AppRoutingModule
     
 
   ],
   exports :[
     ChatWindowComponent
   ],
-  providers: [TestService],
+  providers: [TestService,UserService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

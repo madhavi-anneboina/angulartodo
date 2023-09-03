@@ -1,21 +1,21 @@
 <p>usercard works!</p>
 
-<!-- <div class="card">
-    <img src="{{cuser.img}}"  alt="Image"/>
+<div class="card" *ngIf="cuser"> <!-- Add *ngIf to check if cuser is defined -->
     <div class="details">
-        <h2 id="name">{{cuser.name}}</h2>
-        <p>Some data added Here</p>
+        <h2 id="name">{{ cuser?.firstName }} {{ cuser?.lastName }}</h2> <!-- Use safe navigation operator ? -->
+        <p>Some data added here</p>
     </div>
     <div class="row">
-        <span>Email</span>
-        <span class="data">{{cuser.email}}</span>
+        <span>Age</span>
+        <span class="data">{{ cuser?.age }}</span> <!-- Use safe navigation operator ? -->
     </div>
     <div class="row">
         <span>City</span>
-        <span class="data">{{cuser.address.city}}</span>
+        <span class="data">{{ cuser?.address.city }}</span> <!-- Use safe navigation operator ? -->
     </div>
     <div class="row">
-        <span>Phone</span>
-        <span class="data">{{cuser.phone}}</span>
+        <span>Postal Code</span>
+        <span class="data">{{ cuser?.address.postalCode }}</span> <!-- Use safe navigation operator ? -->
     </div>
-</div> -->
+</div>
+
