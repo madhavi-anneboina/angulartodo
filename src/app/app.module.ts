@@ -42,6 +42,7 @@ import { UserService } from './user.service';
 import { Homechild1Component } from './homechild1/homechild1.component';
 import { Homechild2Component } from './homechild2/homechild2.component';
 import { AuthService } from './auth.service';
+import { TodoformComponent } from './todoform/todoform.component';
 
 
 
@@ -122,6 +123,7 @@ const routes: Routes = [
     UsercardComponent,
     Homechild1Component,
     Homechild2Component,
+    TodoformComponent,
     
   
    
