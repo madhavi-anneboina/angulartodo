@@ -20,16 +20,18 @@ city : <input type="text" [(ngModel)] ="city"/>
 <router-outlet>
 </router-outlet> -->
 
-<button (click)="getData()">Click</button>
+<button (click)="getData()" *ngIf="!data">Click</button>
 
 <div *ngIf="data">
     <table>
+        <tr>
         <th>Id</th>
         <th>Title</th>
         <th>Price</th>
         <th>Description</th>
         <th>Category</th>
         <th>Image</th>
+       </tr>
         <tr *ngFor="let d of data">
             <td>{{d.id}}</td>
             <td>{{d.title}}</td>
