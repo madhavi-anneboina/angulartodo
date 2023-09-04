@@ -97,3 +97,21 @@ body {
 .c1{
   border:5px solid red;
 }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+th {
+  background-color: #f2f2f2;
+  padding: 8px;
+  text-align: left;
+}
+td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+.image-size {
+  width: 200px;
+  height: 150px;
+}

@@ -17,13 +17,22 @@ export class AppComponent {
 @ViewChild("para") p:any
 
 @ViewChildren("heading") h:any
-
-test(){
-  console.log(this.p)
-  for(let ele of this.h){
-    console.log(ele.nativeElement.innerText)
-  }
+constructor(private http:HttpClient){
 }
+data:any = null
+getData(){
+  this.http.get('https://fakestoreapi.com/products?limit=5')
+  .subscribe((data)=>{
+    this.data = data
+  })
+}
+
+// test(){
+//   console.log(this.p)
+//   for(let ele of this.h){
+//     console.log(ele.nativeElement.innerText)
+//   }
+// }
 
 
 

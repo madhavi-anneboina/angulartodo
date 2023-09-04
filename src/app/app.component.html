@@ -16,11 +16,29 @@ city : <input type="text" [(ngModel)] ="city"/>
 <h4>City Name : {{city}}</h4>
 
 <button (click)="updatecity()">Update</button> -->
-<app-header></app-header>
+<!-- <app-header></app-header>
 <router-outlet>
-</router-outlet>
+</router-outlet> -->
 
+<button (click)="getData()">Click</button>
 
-
-
-
+<div *ngIf="data">
+    <table>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Price</th>
+        <th>Description</th>
+        <th>Category</th>
+        <th>Image</th>
+        <tr *ngFor="let d of data">
+            <td>{{d.id}}</td>
+            <td>{{d.title}}</td>
+            <td>{{d.price}}</td>
+            <td>{{d.description}}</td>
+            <td>{{d.category}}</td>
+            <td>
+                <img src={{d.image}} alt="Image Description" class="image-size"/>
+            </td>
+        </tr>
+    </table>
+</div>
