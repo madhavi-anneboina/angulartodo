@@ -70,7 +70,7 @@ const routes: Routes = [
   {
     path: 'products',
     component: ProductsComponent,
-    canActivate : [AuthService]
+   
   },
   
   // {
@@ -88,6 +88,7 @@ const routes: Routes = [
   {
     path: 'contact',
     component: ContactComponent,
+    canActivate : [AuthService]
   },
 ];
 

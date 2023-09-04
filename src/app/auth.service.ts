@@ -9,6 +9,6 @@ export class AuthService implements CanActivate {
 
   constructor() { }
 canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean{
-return true
+return false
   }
 }
