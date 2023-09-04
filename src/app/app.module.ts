@@ -41,6 +41,7 @@ import { UsercardComponent } from './usercard/usercard.component';
 import { UserService } from './user.service';
 import { Homechild1Component } from './homechild1/homechild1.component';
 import { Homechild2Component } from './homechild2/homechild2.component';
+import { AuthService } from './auth.service';
 
 
 
@@ -69,6 +70,7 @@ const routes: Routes = [
   {
     path: 'products',
     component: ProductsComponent,
+    canActivate : [AuthService]
   },
   
   // {
@@ -145,7 +147,7 @@ const routes: Routes = [
   exports :[
     ChatWindowComponent
   ],
-  providers: [TestService,UserService],
+  providers: [TestService,UserService,AuthService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
