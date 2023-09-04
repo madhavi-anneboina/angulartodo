@@ -47,7 +47,7 @@ export class AppComponent {
     }
   )
 
-  subscribe(){
+  test(){
     this.myobs.subscribe(
       data => {console.log(data)},
       err => {console.log(err)},
@@ -56,6 +56,20 @@ export class AppComponent {
   }
 
 
+oneobs = new Observable((hello)=>{
+   hello.next("How are you doing")
+   setTimeout(()=> hello.next("im doing good"),1000)
+   hello.next("what are you doing for living")
+   hello.error("Error is coming")
+   hello.complete()
+})
+ secondtest(){
+   this.oneobs.subscribe(
+    data=>{console.log(data)},
+    err => {console.log(err)},
+    ()=> {console.log("completed")}
+   )
+ }
 
 
 }
