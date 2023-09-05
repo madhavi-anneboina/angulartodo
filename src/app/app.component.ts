@@ -25,7 +25,7 @@ mobiles:any= []
 formHeader = "Add Mobile"
 mobile=""
 showForm = false
-mobileName ="";
+mobileName:any ="";
 price:any;
 ram:any;
 storage:any;
@@ -55,8 +55,29 @@ deletemobile(id:any){
 openForm(){
   this.showForm = true
 }
+closeForm(){
+  this.showForm = false;
+  this.clearForm()
+}
+clearForm(){
+  this.mobileName =null;
+  this.price = null;
+  this.ram = null;
+  this.storage = null
 
+}
+saveMobile(){
 
+  this.showForm =false;
+
+  // let  body = {
+  //   name:this.mobileName,
+  //   price:this.price,
+  //   ram:this.ram,
+  //   storage:this.storage
+  // }
+  
+}
 }
 
 
