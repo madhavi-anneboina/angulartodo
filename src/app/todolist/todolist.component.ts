@@ -10,7 +10,20 @@ import { SharedService } from '../shared.service';
 })
 export class TodolistComponent {
   todos:any=[]
-  todolist:any
+  todolist:any = [
+    {
+      "id":1,
+      "task":"task1"
+    },
+    {
+      "id":2,
+      "task":"task2"
+    },
+    {
+      "id":3,
+      "task":"task3"
+    }
+  ]
   constructor(private ts:SharedService){}
 
   ngOninit(): void{
@@ -20,8 +33,8 @@ export class TodolistComponent {
 //         this.todos = data
 //       }
 //     )
-// this.ts.sendTodos()
-    this.todolist = this.ts.getTodos()
+// // this.ts.sendTodos()
+//     this.todolist = this.ts.getTodos()
   }
 
 }
