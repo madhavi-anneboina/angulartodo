@@ -43,6 +43,7 @@ import { Homechild1Component } from './homechild1/homechild1.component';
 import { Homechild2Component } from './homechild2/homechild2.component';
 import { AuthService } from './auth.service';
 import { TodoformComponent } from './todoform/todoform.component';
+import { TodoService } from './todo.service';
 
 
 
@@ -150,7 +151,7 @@ const routes: Routes = [
   exports :[
     ChatWindowComponent
   ],
-  providers: [TestService,UserService,AuthService],
+  providers: [TestService,UserService,AuthService,TodoService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

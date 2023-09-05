@@ -3,14 +3,14 @@
   <div class="col-6">
     <div class="form-group">
         <label for="newTask">Add New</label>
-        <input type="text" class="form-control" id="newTask"/>
+        <input type="text" class="form-control" id="newTask" [(ngModel)]="todoInput"/>
     </div>
 
   </div>
   <div class="col-3 mt-4">
-      <button class="btn btn-primary">Add</button>
+      <button class="btn btn-primary" (click)="addtask()">Add</button>
   </div>
   <div class="col-3 mt-4">
-    <button class="btn btn-danger">Reset</button>
+    <button class="btn btn-danger" (click)="resetForm()">Reset</button>
 </div>
 </div>
