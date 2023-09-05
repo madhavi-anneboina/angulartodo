@@ -1,4 +1,4 @@
-<div *ngIf="mobiles" class="container mob-table">
+<div *ngIf="mobiles;elseerr" class="container mob-table">
     <div class="headers">
        <h2 class="table-title">Manage Mobiles</h2>
        <button class="btn btn-primary">Add Mobile</button>
@@ -24,7 +24,7 @@
                 <button class="btn btn-primary">Edit</button>
               </td>
               <td>
-                <button class="btn btn-danger">Delete</button>
+                <button class="btn btn-danger" (clcik)="deletemobile(mobile['id'])">Delete</button>
               </td>
 
           </tr>
@@ -32,3 +32,9 @@
      </table>
 
 </div>
+
+<ng-template #err>
+
+   <p class="text-danger">Error Fetching Data</p>
+
+</ng-template>

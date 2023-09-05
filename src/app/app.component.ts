@@ -5,6 +5,7 @@ import { FormControl, FormGroup, Validators, FormArray, FormBuilder } from '@ang
 import { Observable, of, from, range, interval, map, filter, fromEvent, debounceTime, merge, take, pluck, skip } from 'rxjs';
 import { TodoService } from './todo.service';
 import { NavigationEnd, Router } from '@angular/router';
+import { MobileService } from './mobile.service';
 
 
 @Component({
@@ -15,29 +16,34 @@ import { NavigationEnd, Router } from '@angular/router';
 
 export class AppComponent {
  
-  constructor(private http: HttpClient) {
+  constructor(private ms:MobileService) {
   }
 
  
-mobiles = [
-  {
-    name:"xyz",
-    Price:20000,
-    RAM :6,
-    Storage:64
-  },
-  {
-    name:"abc",
-    Price:10000,
-    RAM :4,
-    Storage:24
-  },
-]
+mobiles:any= []
 
 
 
+ngOnInit():void{
+this.getMobiles()
 
+}
+getMobiles = () =>{
+  this.ms.fetchMobiles().subscribe(
+    (data)=>{
+      this.mobiles = data
+    }
+   )
+}
 
+deletemobile(id:any){
+ this.ms.deleteMobile(id).subscribe(
+  (res)=>{
+    this.getMobiles()
+  }
+
+ )
+}
 
 
 }

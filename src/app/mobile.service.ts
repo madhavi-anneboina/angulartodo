@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,5 +6,12 @@ import { Injectable } from '@angular/core';
 })
 export class MobileService {
 
-  constructor() { }
+  constructor(private http:HttpClient) {}
+  url = "http://localhost:5050/mobiles"
+  fetchMobiles(){
+    return this.http.get('this.url')
+  }
+  deleteMobile(id:any){
+    return this.http.delete(this.url+'/'+id)
+  }
 }
