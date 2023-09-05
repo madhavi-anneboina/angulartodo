@@ -14,6 +14,14 @@
                 <th></th>
             </tr>
         </thead>
+        <tbody class="text-center">
+          <tr *ngFor="let mobile of mobiles">
+              <th>{{mobile.name}}</th>
+              <th>{{mobile.Price}}</th>
+              <th>{{mobile.RAM}}</th>
+              <th>{{mobile.Storage}}</th>
+          </tr>
+        </tbody>
      </table>
 
 </div>
