@@ -1,7 +1,7 @@
 <div *ngIf="mobiles;elseerr" class="container mob-table">
     <div class="headers">
        <h2 class="table-title">Manage Mobiles</h2>
-       <button class="btn btn-primary">Add Mobile</button>
+       <button class="btn btn-primary" (click)="openForm()">Add Mobile</button>
     </div>
      <table class="table">
         <thead>
@@ -21,7 +21,7 @@
               <td>{{mobile.RAM}}</td>
               <td>{{mobile.Storage}}</td>
               <td>
-                <button class="btn btn-primary">Edit</button>
+                <button class="btn btn-primary" (click)="openForm()">Edit</button>
               </td>
               <td>
                 <button class="btn btn-danger" (clcik)="deletemobile(mobile['id'])">Delete</button>
@@ -38,3 +38,14 @@
    <p class="text-danger">Error Fetching Data</p>
 
 </ng-template>
+<div class="form-wrapper" *ngIf="showForm">
+   <div class="mobile-form">
+      <h2 class="text-center text-info">{{formHeader}}</h2>
+      <div class="group">
+        <label for="">Name:</label>
+        <input type="text"  class="formControl" [(ngModel)]="mobile"/>
+
+
+      </div>
+   </div>
+</div>
