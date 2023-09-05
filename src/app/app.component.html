@@ -38,14 +38,30 @@
    <p class="text-danger">Error Fetching Data</p>
 
 </ng-template>
+
 <div class="form-wrapper" *ngIf="showForm">
-   <div class="mobile-form">
-      <h2 class="text-center text-info">{{formHeader}}</h2>
-      <div class="group">
-        <label for="">Name:</label>
-        <input type="text"  class="formControl" [(ngModel)]="mobile"/>
+    <div class="mobileForm">
+        <h2 class="text-info text-center">{{formHeader}}</h2>
+        <div class="group">
+            <label for="mobile">Name</label>
+            <input type="text" class="form-control" [(ngModel)]="mobileName" name="mname" required minlength="5">
+        </div>
+        <div class="group">
+            <label for="price">Price</label>
+            <input type="number" class="form-control" [(ngModel)]="price" name="price" required min="1000">
+        </div>
+        <div class="group">
+            <label for="ram">RAM</label>
+            <input type="number" class="form-control" [(ngModel)]="ram" name="ram" required min="1">
+        </div>
+        <div class="group">
+            <label for="storage">Storage</label>
+            <input type="number" class="form-control" [(ngModel)]="storage" name="storage" required min="1">
+        </div>
 
-
-      </div>
-   </div>
+        <div class="action">
+            <button class="btn btn-primary save" (click)="saveMobile()">Save Changes</button>
+            <button class="btn btn-danger cancel" (click)="closeForm()">Cacel</button>
+        </div>
+    </div>
 </div>
