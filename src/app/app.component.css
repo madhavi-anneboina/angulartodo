@@ -149,5 +149,25 @@ th{
   width: 600px;
   padding: 20px 50px;
   border-radius: 5px;
+}
+.form-control{
+  width: 90%;
+}
 
+.group{
+  display: flex;
+  margin: 15px 0;
+}
+
+.group label{
+  width: 70px;
+  line-height: 40px;
+  height: 40px;
+}
+
+.action{
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin: 20px;
 }
