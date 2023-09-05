@@ -25,6 +25,11 @@ mobiles:any= []
 formHeader = "Add Mobile"
 mobile=""
 showForm = false
+mobileName ="";
+price:any;
+ram:any;
+storage:any;
+id= null;
 
 ngOnInit():void{
 this.getMobiles()
