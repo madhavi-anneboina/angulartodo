@@ -22,7 +22,9 @@ export class AppComponent {
  
 mobiles:any= []
 
-
+formHeader = "Add Mobile"
+mobile=""
+showForm = false
 
 ngOnInit():void{
 this.getMobiles()
@@ -43,6 +45,10 @@ deletemobile(id:any){
   }
 
  )
+}
+
+openForm(){
+  this.showForm = true
 }
 
 
