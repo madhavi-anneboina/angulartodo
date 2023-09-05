@@ -44,7 +44,7 @@ import { Homechild2Component } from './homechild2/homechild2.component';
 import { AuthService } from './auth.service';
 import { TodoformComponent } from './todoform/todoform.component';
 import { TodoService } from './todo.service';
-
+import { MobileService } from './mobile.service';
 
 
 
@@ -151,7 +151,7 @@ const routes: Routes = [
   exports :[
     ChatWindowComponent
   ],
-  providers: [TestService,UserService,AuthService,TodoService],
+  providers: [TestService,UserService,AuthService,TodoService,MobileService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
