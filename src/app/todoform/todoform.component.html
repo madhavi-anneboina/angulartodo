@@ -8,9 +8,9 @@
 
   </div>
   <div class="col-3 mt-4">
-      <button class="btn btn-primary" (click)="addtask()">Add</button>
+      <button class="btn btn-primary" (click)="addtask()" [disabled]="!todoInput.length">Add</button>
   </div>
   <div class="col-3 mt-4">
-    <button class="btn btn-danger" (click)="resetForm()">Reset</button>
+    <button class="btn btn-danger" (click)="resetForm()" [disabled]="!todoInput.length">Reset</button>
 </div>
 </div>

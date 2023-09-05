@@ -24,6 +24,9 @@ export class TodoService {
     this.todoList.push({"id":this.taskid, "task":taskname})
 
   }
+  removeTodo(index:any){
+    this.todoList.splice(index,1)
+  }
   //  todos =[
   //   "task1",
   //   "task2",

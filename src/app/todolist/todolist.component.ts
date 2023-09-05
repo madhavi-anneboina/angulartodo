@@ -29,6 +29,9 @@ export class TodolistComponent {
   constructor(private ts:TodoService){
     this.todos = this.ts.todoList
   }
+  removedata(index:any){
+    this.ts.removeTodo(index)
+  }
   ngOninit(): void{
    
    
