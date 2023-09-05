@@ -53,8 +53,15 @@ deletemobile(id:any){
  )
 }
 
-openForm(){
+openForm(data=null){
   this.showForm = true
+  if(data){
+    this.mobileName = data.name;
+    this.price = data.price;
+    this.ram = data.ram;
+    this.storage = data.storage
+     this.id = data.id
+  }
 }
 closeForm(){
   this.showForm = false;
