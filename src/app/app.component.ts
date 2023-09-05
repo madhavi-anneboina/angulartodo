@@ -17,6 +17,7 @@ import { MobileService } from './mobile.service';
 export class AppComponent {
  
   constructor(private ms:MobileService) {
+  
   }
 
  
