@@ -14,12 +14,25 @@ import { NavigationEnd, Router } from '@angular/router';
 })
 
 export class AppComponent {
-  mobiles:any=[]
+ 
   constructor(private http: HttpClient) {
   }
 
  
-
+mobiles = [
+  {
+    name:"xyz",
+    Price:20000,
+    RAM :6,
+    Storage:64
+  },
+  {
+    name:"abc",
+    Price:10000,
+    RAM :4,
+    Storage:24
+  },
+]
 
 
 
