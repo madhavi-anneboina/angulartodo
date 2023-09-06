@@ -61,6 +61,10 @@ openForm(data=null){
     this.ram = data.ram;
     this.storage = data.storage
      this.id = data.id
+     this.formHeader="Edit Mobile"
+  } else {
+    this.id = null 
+    this.formHeader = "Add Mobile"
   }
 }
 closeForm(){
@@ -78,14 +82,33 @@ saveMobile(){
 
   this.showForm =false;
 
-  // let  body = {
-  //   name:this.mobileName,
-  //   price:this.price,
-  //   ram:this.ram,
-  //   storage:this.storage
-  // }
-  
+  let  body = {
+    name:this.mobileName,
+    price:this.price,
+    ram:this.ram,
+    storage:this.storage
+  }
+
+  if(this.id){
+    body.name.id=this.id;
+    this.ms.putMobile(body).subscribe(
+      (res)=>{
+        this.getMobiles()
+      },
+      
+    )
+  }
+
+  else{
+    this.ms.postMobile(body).subscribe(
+      (res)=>{
+        this.getMobiles()
+      },
+    )
+  }
+
 }
+
 }
 
 

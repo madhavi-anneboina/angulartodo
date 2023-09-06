@@ -14,5 +14,11 @@ export class MobileService {
   deleteMobile(id:any){
     return this.http.delete(this.url+'/'+id)
   }
-  
+  postMobile(body:any){
+    return this.http.post(this.url,body)
+  }
+
+  putMobile(body:any){
+    return this.http.put(this.url,body)
+  }
 }
