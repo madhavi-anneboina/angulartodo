@@ -14,11 +14,16 @@ import { MobileService } from './mobile.service';
   styleUrls: ['./app.component.css']
 })
 
+
+
 export class AppComponent {
+  
  
   constructor(private ms:MobileService) {
+    
   
   }
+  greet:any ="Hello how are you doing"
 
  
 
