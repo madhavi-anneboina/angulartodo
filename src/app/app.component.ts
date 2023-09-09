@@ -24,7 +24,7 @@ export class AppComponent {
   
   }
   greet:any ="Hello how are you doing"
-
+  anothergreet ="how to add my colony to it"
  
 
 
