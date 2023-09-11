@@ -45,6 +45,7 @@ import { AuthService } from './auth.service';
 import { TodoformComponent } from './todoform/todoform.component';
 import { TodoService } from './todo.service';
 import { MobileService } from './mobile.service';
+import { ListComponent } from './list/list.component';
 // import { CurdComponent } from './curd/curd.component';
 
 
@@ -126,6 +127,7 @@ const routes: Routes = [
     Homechild1Component,
     Homechild2Component,
     TodoformComponent,
+    ListComponent,
     
     
   
