@@ -1,1 +1,9 @@
-<p *ngFor="let l of list">{{l}}</p>
+
+<ng-content></ng-content>
+
+<ul class="list-group">
+    <li *ngFor="let l of list" class="list-group-item">
+     {{l}}
+    </li>
+
+</ul>

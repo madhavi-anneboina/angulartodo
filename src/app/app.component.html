@@ -1,4 +1,14 @@
 <h1>App component Works</h1>
 
-<app-list [list]="clients"></app-list>
-<app-list [list]="employess"></app-list>
+<div class="row">
+  <div class="col-6">
+    <h4>Clients</h4>
+    <app-list [list]="clients"></app-list>
+  </div>
+   <div class="col-6">
+    <h4>Employess</h4>
+    <app-list [list]="employess"></app-list>
+   </div>
+</div>
+
+
