@@ -18,13 +18,13 @@ import { MobileService } from './mobile.service';
 
 export class AppComponent {
   
- 
+   clients = ['client1','client2','client3']
+   employess = ['employee1','employee2','employee3']
   constructor(private ms:MobileService) {
     
   
   }
-  greet:any ="Hello how are you doing"
-  anothergreet ="how to add my colony to it"
+ 
 
 
 }
