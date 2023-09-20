@@ -2,8 +2,10 @@
 <ng-content></ng-content>
 
 <ul class="list-group">
-    <li *ngFor="let l of list" class="list-group-item">
-     {{l}}
+    <li *ngFor="let person of people" class="list-group-item">
+        {{ person.name }}
+      {{ person.age }}
+      {{ person.email }}
     </li>
 </ul>
 
