@@ -7,5 +7,10 @@ import { Component, Input } from '@angular/core';
 })
 export class ListComponent {
   @Input()list:any
+  people = [
+    { name: 'John Doe', age: 30, email: 'john@example.com' },
+    { name: 'Jane Smith', age: 25, email: 'jane@example.com' },
+   
+  ];
 
 }
