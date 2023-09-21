@@ -1,4 +1,5 @@
 <p>check works!</p>
 <label>
-    <input type="checkbox" [(ngModel)]="isChecked"> Check this box
+    <input type="checkbox" [(ngModel)]="isChecked" (change)="onCheckboxChange()"> Check this box
   </label>
+  
