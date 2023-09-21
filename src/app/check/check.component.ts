@@ -14,7 +14,7 @@ export class CheckComponent {
       // Add your code for when the checkbox is checked
     } else {
       console.log('Checkbox is unchecked');
-      // Add your code for when the checkbox is unchecked
+    
     }
   }
 
