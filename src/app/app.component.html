@@ -30,7 +30,7 @@
 </app-child>
 
 <form action="">
-  <div>
+  <div ngModelGroup #group="ngModelGroup">
     username:
     <input type="text" required
     minlength="4"
@@ -41,7 +41,6 @@
     />
     Password:
     <input type="text" required
-   
     class="form-control w-50 m-2" 
     ngModel 
     name="pwd" 
@@ -49,6 +48,6 @@
     />
   </div>
 
-  <button class="btn btn-secondary" (click)="show(un,ps)">Clcik me</button>
+  <button class="btn btn-secondary" (click)="show(un,ps,group)">Clcik me</button>
 
 </form>
