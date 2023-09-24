@@ -20,11 +20,14 @@ export class AppComponent {
   
    clients = ['client1','client2','client3']
    employess = ['employee1','employee2','employee3']
+   show(fc:any,ps:any){
+      console.log(fc,ps)
+   }
    
   constructor(private ms:MobileService) {
-    
-  
+   
   }
+  
  
 
 

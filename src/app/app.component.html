@@ -30,7 +30,25 @@
 </app-child>
 
 <form action="">
-  username:
-  <input type="text" class="form-control w-50 m-2" ngModel name="uname" #un="ngModel"/>
+  <div>
+    username:
+    <input type="text" required
+    minlength="4"
+    class="form-control w-50 m-2" 
+    ngModel 
+    name="uname" 
+    #un="ngModel"
+    />
+    Password:
+    <input type="text" required
+   
+    class="form-control w-50 m-2" 
+    ngModel 
+    name="pwd" 
+    #ps="ngModel"
+    />
+  </div>
+
+  <button class="btn btn-secondary" (click)="show(un,ps)">Clcik me</button>
 
 </form>
