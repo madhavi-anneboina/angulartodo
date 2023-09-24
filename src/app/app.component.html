@@ -10,8 +10,10 @@
     <app-list [list]="employess"></app-list>
    </div>
 </div>
-<ng-container *ngFor="let num of ['80','70','60','50','40','30','20','10']">
-  {{num}}
+<ng-container *ngFor="let num of ['80','70','61','50','41','30','21','11']">
+ <ng-container *ngIf num:any="num%2==0"> 
+    {{num}}
+ </ng-containers>
 
 </ng-container>
 
