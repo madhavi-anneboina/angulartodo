@@ -9,13 +9,13 @@ export class CheckComponent {
   isChecked: boolean = false;
   onCheckboxChange(): void {
   
-    if (this.isChecked) {
-      console.log('Checkbox is checked');
+    // if (this.isChecked) {
+    //   console.log('Checkbox is checked');
  
-    } else {
-      console.log('Checkbox is unchecked');
+    // } else {
+    //   console.log('Checkbox is unchecked');
     
-    }
+    // }
   }
 
 }
