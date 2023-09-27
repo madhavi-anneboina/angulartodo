@@ -47,6 +47,7 @@ import { TodoService } from './todo.service';
 import { MobileService } from './mobile.service';
 import { ListComponent } from './list/list.component';
 import { CheckComponent } from './check/check.component';
+import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 // import { CurdComponent } from './curd/curd.component';
 
 
@@ -130,6 +131,7 @@ const routes: Routes = [
     TodoformComponent,
     ListComponent,
     CheckComponent,
+    ReactiveformComponent,
     
     
   
